@@ -11,6 +11,12 @@
 #import "ATDetailCodeViewController.h"
 #import "ATPerson.h"
 
+#import "ATCommonTableModel.h"
+
+static NSString *const kCmn_title = @"commonTitle";
+static NSString *const kCmn_detail = @"commonDetail";
+static NSString *const kCmn_action = @"commonAction";
+
 @implementation ATRuntimeViewModel
 
 - (void)function1ItemClicked {
@@ -61,15 +67,65 @@
 
 
 - (NSArray *)getDataSource {
-    NSArray *dataSource = @[kRuntimeText_1,
-                            kRuntimeText_2,
-                            kRuntimeText_3,
-                            kRuntimeText_4,
-                            kRuntimeText_5,
-                            kRuntimeText_6,
-                            kRuntimeText_7,
-                            kRuntimeText_8,
-                            kRuntimeText_9];
+    NSArray *dataArr = @[@{
+                             kCmn_title : kRuntimeText_1,
+                             kCmn_detail : @"class_copyIvarList",
+                             kCmn_action : @"function1ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_2,
+                             kCmn_detail : @"class_copyPropertyList",
+                             kCmn_action : @"function2ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_3,
+                             kCmn_detail : @"class_copyMethodList",
+                             kCmn_action : @"function3ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_4,
+                             kCmn_detail : @"class_copyProtocolList",
+                             kCmn_action : @"function4ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_5,
+                             kCmn_detail : @"object_setIvar",
+                             kCmn_action : @"function5ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_6,
+                             kCmn_detail : @"method_exchangeImplementations",
+                             kCmn_action : @"function6ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_7,
+                             kCmn_detail : @"class_addMethod",
+                             kCmn_action : @"function7ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_8,
+                             kCmn_detail : @"",
+                             kCmn_action : @"function8ItemClicked"
+                             },
+                         @{
+                             kCmn_title : kRuntimeText_9,
+                             kCmn_detail : @"",
+                             kCmn_action : @"function9ItemClicked"
+                             },
+                         ];
+    
+    NSMutableArray *dataSource = [NSMutableArray arrayWithCapacity:0];
+    for (NSInteger i = 0; i < dataArr.count; i ++) {
+        NSDictionary *dic = dataArr[i];
+        
+        ATCommonTableModel *model = [[ATCommonTableModel alloc] init];
+        model.title = dic[kCmn_title];
+        model.detail = dic[kCmn_detail];
+        model.actionName = dic[kCmn_action];
+        
+        [dataSource addObject:model];
+    }
+    
     return dataSource;
 }
 

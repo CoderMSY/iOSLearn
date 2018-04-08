@@ -9,9 +9,11 @@
 #import "ATRuntimeViewController.h"
 #import <objc/runtime.h>
 #import <Masonry/Masonry.h>
+#import <UIAlertController+Blocks/UIAlertController+Blocks.h>
 
 #import "ATCommonTableView.h"
 #import "ATRuntimeViewModel.h"
+#import "ATCommonTableModel.h"
 
 #import "ATPerson.h"
 #import "ATPerson+addProperty.h"
@@ -80,7 +82,6 @@
     }
     // 记得释放
     free(ivars);
-    
     //如果你的成员私有,也可以获取到 比如_education
 }
 
@@ -202,39 +203,50 @@
     //查看上面的结果发现 doSomeThing和doSomeOtherThing交换了。
 }
 
+/** 动态添加新方法
+ */
+- (void)function7ItemClicked {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wundeclared-selector"
+    class_addMethod([self.student class], @selector(fromCity:), (IMP)fromCityAnswer, "v@:@");
+    if ([self.student respondsToSelector:@selector(fromCity:)]) {
+        //Method method = class_getInstanceMethod([self.xiaoMing class], @selector(guess));
+        [self.student performSelector:@selector(fromCity:) withObject:@"洛杉矶"];
+    #pragma clang diagnostic pop
+    } else{
+        NSLog(@"无法告诉你我从哪儿来");
+    }
+    
+    
+    /**
+     (IMP) fromCityAnswer 意思是fromCityAnswer的地址指针;
+     "v@:" 意思是，v代表无返回值void，如果是i则代表int；@代表 id sel; : 代表 SEL _cmd;
+     “v@:@” 意思是，一个参数的没有返回值。
+     */
+}
+
+#pragma mark RunTime代码
+
+void fromCityAnswer(id self,SEL _cmd,NSString *str){
+    
+    NSLog(@"我来自:%@",str);
+}
+
 #pragma mark - ATCommonTableViewDelegate
 
 - (void)commonTableView:(ATCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *text = self.commonTableView.dataSource[indexPath.row];
-    
-    if ([text isEqualToString:kRuntimeText_1]) {
-        [self function1ItemClicked];
-        NSString *code = [self.viewModel getCodeContent];
-        [self.viewModel presentDetailCodeViewCtrWithCode:code];
+    ATCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
+    if (cmnModel.actionName.length > 0) {
+        SEL sel = NSSelectorFromString(cmnModel.actionName);
+        if ([self respondsToSelector:sel]) {
+            AT_SuppressPerformSelectorLeakWarning([self performSelector:sel]);
+        }
+        else {
+            NSLog(@"方法未找到，请显示");
+        }
     }
-    else if ([text isEqualToString:kRuntimeText_2]) {
-        [self function2ItemClicked];
-    }
-    else if ([text isEqualToString:kRuntimeText_3]) {
-        [self function3ItemClicked];
-    }
-    else if ([text isEqualToString:kRuntimeText_4]) {
-        [self function4ItemClicked];
-    }
-    else if ([text isEqualToString:kRuntimeText_5]) {
-        [self function5ItemClicked];
-    }
-    else if ([text isEqualToString:kRuntimeText_6]) {
-        [self function6ItemClicked];
-    }
-    else if ([text isEqualToString:kRuntimeText_7]) {
-        
-    }
-    else if ([text isEqualToString:kRuntimeText_8]) {
-        
-    }
-    else if ([text isEqualToString:kRuntimeText_9]) {
-        
+    else {
+        NSLog(@"请传入方法名");
     }
 }
 

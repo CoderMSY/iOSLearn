@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class ATCommonTableView;
+@class ATCommonTableModel;
 @protocol ATCommonTableViewDelegate <NSObject>
 
 - (void)commonTableView:(ATCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -18,6 +19,6 @@
 @interface ATCommonTableView : UIView
 
 @property (nonatomic, weak) id <ATCommonTableViewDelegate>delegate;
-@property (nonatomic, strong) NSArray <NSString *>*dataSource;
+@property (nonatomic, strong) NSArray <ATCommonTableModel *>*dataSource;
 
 @end

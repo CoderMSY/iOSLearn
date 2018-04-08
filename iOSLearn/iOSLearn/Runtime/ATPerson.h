@@ -31,4 +31,6 @@
 - (NSString *)doSomeThing;
 - (NSString *)doSomeOtherThing;
 
+//- (void)fromCity:(NSString *)city;
+
 @end

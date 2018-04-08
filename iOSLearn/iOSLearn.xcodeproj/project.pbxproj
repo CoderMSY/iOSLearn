@@ -24,6 +24,7 @@
 		7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F0112079BFC800783702 /* ATBaseViewModel.m */; };
 		7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F0142079C01600783702 /* ATRuntimeViewModel.m */; };
 		7EE1F0192079FE0500783702 /* runtimeDemo.md in Resources */ = {isa = PBXBuildFile; fileRef = 7EE1F0182079FE0500783702 /* runtimeDemo.md */; };
+		7EE1F01C207A0B2E00783702 /* ATCommonTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F01B207A0B2E00783702 /* ATCommonTableModel.m */; };
 		7EF63E10207466EB00F6F841 /* ATRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */; };
 		7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E12207466FD00F6F841 /* ATPerson.m */; };
 		7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E152074708700F6F841 /* ATPerson+addProperty.m */; };
@@ -85,6 +86,10 @@
 		7EE1F0142079C01600783702 /* ATRuntimeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeViewModel.m; sourceTree = "<group>"; };
 		7EE1F0162079C11B00783702 /* ATRuntimeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeDefine.h; sourceTree = "<group>"; };
 		7EE1F0182079FE0500783702 /* runtimeDemo.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = runtimeDemo.md; sourceTree = "<group>"; };
+		7EE1F01A207A0B2E00783702 /* ATCommonTableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommonTableModel.h; sourceTree = "<group>"; };
+		7EE1F01B207A0B2E00783702 /* ATCommonTableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommonTableModel.m; sourceTree = "<group>"; };
+		7EE1F01D207A10B700783702 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7EE1F01E207A113600783702 /* ATShareMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATShareMacro.h; sourceTree = "<group>"; };
 		7EF63E0E207466EB00F6F841 /* ATRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeViewController.h; sourceTree = "<group>"; };
 		7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeViewController.m; sourceTree = "<group>"; };
 		7EF63E11207466FD00F6F841 /* ATPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPerson.h; sourceTree = "<group>"; };
@@ -162,6 +167,8 @@
 				7E0A9BA32073673300524B2D /* LaunchScreen.storyboard */,
 				7E0A9BA62073673300524B2D /* Info.plist */,
 				7E0A9BA72073673400524B2D /* main.m */,
+				7EE1F01D207A10B700783702 /* PrefixHeader.pch */,
+				7EE1F01E207A113600783702 /* ATShareMacro.h */,
 			);
 			path = iOSLearn;
 			sourceTree = "<group>";
@@ -200,6 +207,8 @@
 			children = (
 				7E49EFB12078836700405ED0 /* ATCommonTableView.h */,
 				7E49EFB22078836700405ED0 /* ATCommonTableView.m */,
+				7EE1F01A207A0B2E00783702 /* ATCommonTableModel.h */,
+				7EE1F01B207A0B2E00783702 /* ATCommonTableModel.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -403,6 +412,7 @@
 			files = (
 				7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */,
 				7E0E18B1207382EA00B6C1F9 /* ATBaseViewController.m in Sources */,
+				7EE1F01C207A0B2E00783702 /* ATCommonTableModel.m in Sources */,
 				7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */,
 				7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */,
 				7E0E18AE207381A300B6C1F9 /* ATDeepShallowCopyViewController.m in Sources */,
@@ -585,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/iOSLearn/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -603,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/iOSLearn/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
