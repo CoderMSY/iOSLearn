@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATKVOViewController">
+            <connections>
+                <outlet property="freshLab" destination="gCH-4i-Ul7" id="A6f-kC-Bht"/>
+                <outlet property="oldLab" destination="mjh-uR-fmp" id="Uva-ww-pZo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rho-c4-pLd">
+                    <rect key="frame" x="100" y="229" width="175" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.94395227042555108" green="0.97139401170256223" blue="0.1840616652636064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="add-1"/>
+                    <connections>
+                        <action selector="addBtnClicked:" destination="-1" eventType="touchUpInside" id="MfA-9c-3Nf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新值为:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCH-4i-Ul7">
+                    <rect key="frame" x="100" y="176.5" width="175" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.2392321728" green="0.1222937776" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旧值为:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-uR-fmp" userLabel="old Lab">
+                    <rect key="frame" x="100" y="120" width="175" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.2392321728" green="0.1222937776" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rho-c4-pLd" secondAttribute="trailing" constant="100" id="3wO-YH-BAI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mjh-uR-fmp" secondAttribute="trailing" constant="100" id="8aL-Zq-RuJ"/>
+                <constraint firstItem="mjh-uR-fmp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="CG8-E4-0Ju"/>
+                <constraint firstItem="rho-c4-pLd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="NaX-wN-RF3"/>
+                <constraint firstItem="gCH-4i-Ul7" firstAttribute="top" secondItem="mjh-uR-fmp" secondAttribute="bottom" constant="36" id="Wkg-zx-OlC"/>
+                <constraint firstItem="mjh-uR-fmp" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="nih-7z-5ev"/>
+                <constraint firstItem="gCH-4i-Ul7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="pot-D5-EdY"/>
+                <constraint firstItem="rho-c4-pLd" firstAttribute="top" secondItem="gCH-4i-Ul7" secondAttribute="bottom" constant="32" id="xyb-xi-iWE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gCH-4i-Ul7" secondAttribute="trailing" constant="100" id="y5P-98-QJk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-96" y="18"/>
+        </view>
+    </objects>
+</document>

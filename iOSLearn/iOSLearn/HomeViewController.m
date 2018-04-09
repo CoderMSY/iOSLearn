@@ -10,6 +10,8 @@
 
 static NSString *const kText_copy = @"深拷贝与浅拷贝";
 static NSString *const kText_runtime = @"runtime";
+static NSString *const kText_KVO = @"KVO";
+static NSString *const kText_thread = @"线程";
 
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -45,7 +47,7 @@ static NSString *const kText_runtime = @"runtime";
 #pragma mark - private methods
 
 - (void)loadDataSource {
-    self.dataSource = @[kText_copy,kText_runtime];
+    self.dataSource = @[kText_copy,kText_runtime,kText_KVO,kText_thread];
     [self.tableView reloadData];
 }
 
@@ -73,6 +75,12 @@ static NSString *const kText_runtime = @"runtime";
     }
     else if ([text isEqualToString:kText_runtime]) {
         viewCtrName = @"ATRuntimeViewController";
+    }
+    else if ([text isEqualToString:kText_KVO]) {
+        viewCtrName = @"ATKVOViewController";
+    }
+    else if ([text isEqualToString:kText_thread]) {
+        
     }
     UIViewController *viewController;
     if (viewCtrName.length > 0) {
