@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E042922209197A3009BCABB /* ATKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E042921209197A3009BCABB /* ATKVCViewController.m */; };
+		7E04292520919ACC009BCABB /* ATStudentKVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E04292420919ACC009BCABB /* ATStudentKVCModel.m */; };
 		7E0A9B9A2073673100524B2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A9B992073673100524B2D /* AppDelegate.m */; };
 		7E0A9B9D2073673100524B2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A9B9C2073673100524B2D /* ViewController.m */; };
 		7E0A9BA02073673100524B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0A9B9E2073673100524B2D /* Main.storyboard */; };
@@ -20,9 +22,12 @@
 		7E0E18AE207381A300B6C1F9 /* ATDeepShallowCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E18AD207381A300B6C1F9 /* ATDeepShallowCopyViewController.m */; };
 		7E0E18B1207382EA00B6C1F9 /* ATBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E18B0207382EA00B6C1F9 /* ATBaseViewController.m */; };
 		7E49EFB32078836700405ED0 /* ATCommonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49EFB22078836700405ED0 /* ATCommonTableView.m */; };
+		7E7D4C59207EFA66003EBEC1 /* ATPoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7D4C58207EFA66003EBEC1 /* ATPoolViewController.m */; };
+		7E9F655E20848FA900A73B20 /* ATTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F655D20848FA900A73B20 /* ATTestModel.m */; };
 		7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF2207B4C780069AEA1 /* ATKVOViewController.m */; };
 		7EB64EF5207B4C780069AEA1 /* ATKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */; };
 		7EB64EF8207B4FF80069AEA1 /* ATKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */; };
+		7ED58A3820805C6500ABEA3D /* ATThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED58A3720805C6500ABEA3D /* ATThreadViewController.m */; };
 		7EE1F00F2079BDEE00783702 /* ATDetailCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F00E2079BDEE00783702 /* ATDetailCodeViewController.m */; };
 		7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F0112079BFC800783702 /* ATBaseViewModel.m */; };
 		7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F0142079C01600783702 /* ATRuntimeViewModel.m */; };
@@ -31,6 +36,10 @@
 		7EF63E10207466EB00F6F841 /* ATRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */; };
 		7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E12207466FD00F6F841 /* ATPerson.m */; };
 		7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E152074708700F6F841 /* ATPerson+addProperty.m */; };
+		7EFF53A42092CA4800938F24 /* ATSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF53A32092CA4800938F24 /* ATSortViewController.m */; };
+		7EFF53A72092CAA000938F24 /* ATSortViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF53A62092CAA000938F24 /* ATSortViewModel.m */; };
+		7EFF53AC2092F1FF00938F24 /* ATBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF53AB2092F1FF00938F24 /* ATBlockViewController.m */; };
+		7EFF53AF2092FE2800938F24 /* ATTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF53AE2092FE2800938F24 /* ATTestViewController.m */; };
 		EDE8CB2B81DAB64A6541CCD7 /* libPods-iOSLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71553DBFEA62B0121DE4B2E3 /* libPods-iOSLearn.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +64,10 @@
 		0D2F83B2AF978F74272CFF11 /* Pods-iOSLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearn/Pods-iOSLearn.release.xcconfig"; sourceTree = "<group>"; };
 		1AFCFE7C66193EB40A569E43 /* Pods-iOSLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearn/Pods-iOSLearn.debug.xcconfig"; sourceTree = "<group>"; };
 		71553DBFEA62B0121DE4B2E3 /* libPods-iOSLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E042920209197A3009BCABB /* ATKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVCViewController.h; sourceTree = "<group>"; };
+		7E042921209197A3009BCABB /* ATKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVCViewController.m; sourceTree = "<group>"; };
+		7E04292320919ACC009BCABB /* ATStudentKVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStudentKVCModel.h; sourceTree = "<group>"; };
+		7E04292420919ACC009BCABB /* ATStudentKVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStudentKVCModel.m; sourceTree = "<group>"; };
 		7E0A9B952073673100524B2D /* iOSLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0A9B982073673100524B2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E0A9B992073673100524B2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,11 +94,17 @@
 		7E0E18B0207382EA00B6C1F9 /* ATBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseViewController.m; sourceTree = "<group>"; };
 		7E49EFB12078836700405ED0 /* ATCommonTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommonTableView.h; sourceTree = "<group>"; };
 		7E49EFB22078836700405ED0 /* ATCommonTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommonTableView.m; sourceTree = "<group>"; };
+		7E7D4C57207EFA66003EBEC1 /* ATPoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPoolViewController.h; sourceTree = "<group>"; };
+		7E7D4C58207EFA66003EBEC1 /* ATPoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPoolViewController.m; sourceTree = "<group>"; };
+		7E9F655C20848FA900A73B20 /* ATTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTestModel.h; sourceTree = "<group>"; };
+		7E9F655D20848FA900A73B20 /* ATTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTestModel.m; sourceTree = "<group>"; };
 		7EB64EF1207B4C780069AEA1 /* ATKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVOViewController.h; sourceTree = "<group>"; };
 		7EB64EF2207B4C780069AEA1 /* ATKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVOViewController.m; sourceTree = "<group>"; };
 		7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATKVOViewController.xib; sourceTree = "<group>"; };
 		7EB64EF6207B4FF80069AEA1 /* ATKVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVOModel.h; sourceTree = "<group>"; };
 		7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVOModel.m; sourceTree = "<group>"; };
+		7ED58A3620805C6500ABEA3D /* ATThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadViewController.h; sourceTree = "<group>"; };
+		7ED58A3720805C6500ABEA3D /* ATThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadViewController.m; sourceTree = "<group>"; };
 		7EE1F00D2079BDEE00783702 /* ATDetailCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDetailCodeViewController.h; sourceTree = "<group>"; };
 		7EE1F00E2079BDEE00783702 /* ATDetailCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDetailCodeViewController.m; sourceTree = "<group>"; };
 		7EE1F0102079BFC800783702 /* ATBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseViewModel.h; sourceTree = "<group>"; };
@@ -104,6 +123,15 @@
 		7EF63E12207466FD00F6F841 /* ATPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPerson.m; sourceTree = "<group>"; };
 		7EF63E142074708700F6F841 /* ATPerson+addProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ATPerson+addProperty.h"; sourceTree = "<group>"; };
 		7EF63E152074708700F6F841 /* ATPerson+addProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ATPerson+addProperty.m"; sourceTree = "<group>"; };
+		7EFF53A22092CA4800938F24 /* ATSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSortViewController.h; sourceTree = "<group>"; };
+		7EFF53A32092CA4800938F24 /* ATSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSortViewController.m; sourceTree = "<group>"; };
+		7EFF53A52092CAA000938F24 /* ATSortViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSortViewModel.h; sourceTree = "<group>"; };
+		7EFF53A62092CAA000938F24 /* ATSortViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSortViewModel.m; sourceTree = "<group>"; };
+		7EFF53A82092CB8100938F24 /* ATSortDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSortDefine.h; sourceTree = "<group>"; };
+		7EFF53AA2092F1FF00938F24 /* ATBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBlockViewController.h; sourceTree = "<group>"; };
+		7EFF53AB2092F1FF00938F24 /* ATBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBlockViewController.m; sourceTree = "<group>"; };
+		7EFF53AD2092FE2800938F24 /* ATTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTestViewController.h; sourceTree = "<group>"; };
+		7EFF53AE2092FE2800938F24 /* ATTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +160,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E04291F20919787009BCABB /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				7E042920209197A3009BCABB /* ATKVCViewController.h */,
+				7E042921209197A3009BCABB /* ATKVCViewController.m */,
+				7E04292320919ACC009BCABB /* ATStudentKVCModel.h */,
+				7E04292420919ACC009BCABB /* ATStudentKVCModel.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
 		7E0A9B8C2073673100524B2D = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +206,12 @@
 				7E0E18B0207382EA00B6C1F9 /* ATBaseViewController.m */,
 				7EE1F0102079BFC800783702 /* ATBaseViewModel.h */,
 				7EE1F0112079BFC800783702 /* ATBaseViewModel.m */,
+				7EFF53A92092F1EB00938F24 /* Block */,
+				7EFF53A02092CA2800938F24 /* Sort */,
+				7E04291F20919787009BCABB /* KVC */,
+				7ED58A3520805C5200ABEA3D /* Thread */,
+				7E7D4C5A207F2E9D003EBEC1 /* Video */,
+				7E7D4C56207EFA34003EBEC1 /* Pool */,
 				7E49EFB02078834B00405ED0 /* Common */,
 				7EF63E0D2074652700F6F841 /* Runtime */,
 				7E0A9BCA207367B400524B2D /* Copy */,
@@ -222,6 +267,22 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		7E7D4C56207EFA34003EBEC1 /* Pool */ = {
+			isa = PBXGroup;
+			children = (
+				7E7D4C57207EFA66003EBEC1 /* ATPoolViewController.h */,
+				7E7D4C58207EFA66003EBEC1 /* ATPoolViewController.m */,
+			);
+			path = Pool;
+			sourceTree = "<group>";
+		};
+		7E7D4C5A207F2E9D003EBEC1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		7EB64EED207B3CEE0069AEA1 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +293,17 @@
 				7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */,
 			);
 			path = KVO;
+			sourceTree = "<group>";
+		};
+		7ED58A3520805C5200ABEA3D /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				7ED58A3620805C6500ABEA3D /* ATThreadViewController.h */,
+				7ED58A3720805C6500ABEA3D /* ATThreadViewController.m */,
+				7E9F655C20848FA900A73B20 /* ATTestModel.h */,
+				7E9F655D20848FA900A73B20 /* ATTestModel.m */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 		7EE1F0172079FDEE00783702 /* resource */ = {
@@ -259,6 +331,37 @@
 				7EE1F0172079FDEE00783702 /* resource */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		7EFF53A02092CA2800938F24 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF53A12092CA3200938F24 /* Sort */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		7EFF53A12092CA3200938F24 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF53A22092CA4800938F24 /* ATSortViewController.h */,
+				7EFF53A32092CA4800938F24 /* ATSortViewController.m */,
+				7EFF53A52092CAA000938F24 /* ATSortViewModel.h */,
+				7EFF53A62092CAA000938F24 /* ATSortViewModel.m */,
+				7EFF53A82092CB8100938F24 /* ATSortDefine.h */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		7EFF53A92092F1EB00938F24 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF53AA2092F1FF00938F24 /* ATBlockViewController.h */,
+				7EFF53AB2092F1FF00938F24 /* ATBlockViewController.m */,
+				7EFF53AD2092FE2800938F24 /* ATTestViewController.h */,
+				7EFF53AE2092FE2800938F24 /* ATTestViewController.m */,
+			);
+			path = Block;
 			sourceTree = "<group>";
 		};
 		873FBBF84FBE3C0F893F57BB /* Pods */ = {
@@ -433,20 +536,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */,
+				7E7D4C59207EFA66003EBEC1 /* ATPoolViewController.m in Sources */,
+				7E9F655E20848FA900A73B20 /* ATTestModel.m in Sources */,
 				7E0E18B1207382EA00B6C1F9 /* ATBaseViewController.m in Sources */,
 				7EE1F01C207A0B2E00783702 /* ATCommonTableModel.m in Sources */,
 				7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */,
 				7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */,
 				7E0E18AE207381A300B6C1F9 /* ATDeepShallowCopyViewController.m in Sources */,
 				7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */,
+				7ED58A3820805C6500ABEA3D /* ATThreadViewController.m in Sources */,
 				7E0A9B9D2073673100524B2D /* ViewController.m in Sources */,
 				7E0A9BA82073673400524B2D /* main.m in Sources */,
 				7E49EFB32078836700405ED0 /* ATCommonTableView.m in Sources */,
+				7EFF53AC2092F1FF00938F24 /* ATBlockViewController.m in Sources */,
 				7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */,
+				7EFF53A42092CA4800938F24 /* ATSortViewController.m in Sources */,
 				7EB64EF8207B4FF80069AEA1 /* ATKVOModel.m in Sources */,
+				7E04292520919ACC009BCABB /* ATStudentKVCModel.m in Sources */,
+				7E042922209197A3009BCABB /* ATKVCViewController.m in Sources */,
+				7EFF53AF2092FE2800938F24 /* ATTestViewController.m in Sources */,
 				7EF63E10207466EB00F6F841 /* ATRuntimeViewController.m in Sources */,
 				7E0A9B9A2073673100524B2D /* AppDelegate.m in Sources */,
 				7EE1F00F2079BDEE00783702 /* ATDetailCodeViewController.m in Sources */,
+				7EFF53A72092CAA000938F24 /* ATSortViewModel.m in Sources */,
 				7E0A9BD0207377C300524B2D /* HomeViewController.m in Sources */,
 				7E0A9BCD207367C700524B2D /* Student.m in Sources */,
 			);
@@ -619,6 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHH85LCW4M;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/iOSLearn/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -638,6 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHH85LCW4M;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/iOSLearn/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

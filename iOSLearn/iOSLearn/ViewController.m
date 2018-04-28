@@ -43,8 +43,8 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
+//        _tableView.delegate = self;
+//        _tableView.dataSource = self;
     }
     return _tableView;
 }

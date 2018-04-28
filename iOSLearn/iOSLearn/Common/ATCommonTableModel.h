@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *const kCmn_title = @"commonTitle";
+static NSString *const kCmn_detail = @"commonDetail";
+static NSString *const kCmn_action = @"commonAction";
+
 @interface ATCommonTableModel : NSObject
 
 @property (nonatomic, copy) NSString *title;

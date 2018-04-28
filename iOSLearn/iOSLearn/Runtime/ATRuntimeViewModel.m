@@ -13,10 +13,6 @@
 
 #import "ATCommonTableModel.h"
 
-static NSString *const kCmn_title = @"commonTitle";
-static NSString *const kCmn_detail = @"commonDetail";
-static NSString *const kCmn_action = @"commonAction";
-
 @implementation ATRuntimeViewModel
 
 - (void)function1ItemClicked {

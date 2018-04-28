@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - ATBase (0.1.1)
   - CocoaLumberjack (3.4.1):
     - CocoaLumberjack/Default (= 3.4.1)
     - CocoaLumberjack/Extensions (= 3.4.1)
@@ -23,29 +24,39 @@ PODS:
   - CYLTabBarController (1.17.6)
   - Masonry (1.1.0)
   - "UIAlertController+Blocks (0.9.2)"
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - ATBase
   - CocoaLumberjack
   - CYLTabBarController
   - Masonry
   - "UIAlertController+Blocks"
+  - YYKit
 
 SPEC REPOS:
+  https://gitee.com/simonmiao/ATSpecs.git:
+    - ATBase
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaLumberjack
     - CYLTabBarController
     - Masonry
     - "UIAlertController+Blocks"
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  ATBase: 28453940316d8ec39eda7f6cd5190fc7e007fcf7
   CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
   CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 8dcb45f8f3047b1b839ef340931f359059aca63e
+PODFILE CHECKSUM: 2fd114bab2222e96e1b0e6f39487f0c2b82a2fd5
 
 COCOAPODS: 1.5.0

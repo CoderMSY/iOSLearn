@@ -10,8 +10,13 @@
 
 static NSString *const kText_copy = @"深拷贝与浅拷贝";
 static NSString *const kText_runtime = @"runtime";
+static NSString *const kText_KVC = @"KVC";
 static NSString *const kText_KVO = @"KVO";
 static NSString *const kText_thread = @"线程";
+static NSString *const kText_pool = @"autoreleasePool";
+static NSString *const kText_video = @"视频";
+static NSString *const kText_sort = @"排序";
+static NSString *const kText_block = @"block";
 
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -47,7 +52,7 @@ static NSString *const kText_thread = @"线程";
 #pragma mark - private methods
 
 - (void)loadDataSource {
-    self.dataSource = @[kText_copy,kText_runtime,kText_KVO,kText_thread];
+    self.dataSource = @[kText_copy,kText_runtime,kText_KVC,kText_KVO,kText_thread,kText_pool,kText_sort,kText_block];
     [self.tableView reloadData];
 }
 
@@ -76,11 +81,23 @@ static NSString *const kText_thread = @"线程";
     else if ([text isEqualToString:kText_runtime]) {
         viewCtrName = @"ATRuntimeViewController";
     }
+    else if ([text isEqualToString:kText_KVC]) {
+        viewCtrName = @"ATKVCViewController";
+    }
     else if ([text isEqualToString:kText_KVO]) {
         viewCtrName = @"ATKVOViewController";
     }
     else if ([text isEqualToString:kText_thread]) {
-        
+        viewCtrName = @"ATThreadViewController";
+    }
+    else if ([text isEqualToString:kText_pool]) {
+        viewCtrName = @"ATPoolViewController";
+    }
+    else if ([text isEqualToString:kText_sort]) {
+        viewCtrName = @"ATSortViewController";
+    }
+    else if ([text isEqualToString:kText_block]) {
+        viewCtrName = @"ATBlockViewController";
     }
     UIViewController *viewController;
     if (viewCtrName.length > 0) {
