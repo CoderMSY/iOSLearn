@@ -1,17 +1,17 @@
 //
-//  ATTestModel.m
+//  ATOperationModel.m
 //  iOSLearn
 //
-//  Created by SimonMiao on 2018/4/16.
+//  Created by SimonMiao on 2018/4/30.
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
-#import "ATTestModel.h"
+#import "ATOperationModel.h"
 
-@implementation ATTestModel
+@implementation ATOperationModel
 
 - (void)modifyWithName:(NSString *)name {
-//    NSParameterAssert(name);
+    //    NSParameterAssert(name);
     self.name = name;
 }
 
@@ -20,11 +20,11 @@
         return YES;
     }
     
-    if (![object isKindOfClass:[ATTestModel class]]) {
+    if (![object isKindOfClass:[ATOperationModel class]]) {
         return NO;
     }
     
-    ATTestModel *objectModel = (ATTestModel *)object;
+    ATOperationModel *objectModel = (ATOperationModel *)object;
     
     return self.hash == objectModel.hash;
 }
@@ -32,5 +32,6 @@
 - (NSUInteger)hash {
     return [self.name hash] ^ [self.birthday hash];
 }
+
 
 @end

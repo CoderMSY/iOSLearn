@@ -1,27 +1,36 @@
 //
-//  ATThreadViewController.m
+//  ATOperationViewController.m
 //  iOSLearn
 //
-//  Created by SimonMiao on 2018/4/13.
+//  Created by SimonMiao on 2018/4/30.
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
-#import "ATThreadViewController.h"
-#import "ATTestModel.h"
+#import "ATOperationViewController.h"
+#import "ATOperationModel.h"
 
-@interface ATThreadViewController ()
+@interface ATOperationViewController ()
 
 @end
 
-@implementation ATThreadViewController
+@implementation ATOperationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    ATTestModel *firstModel = [[ATTestModel alloc] init];
+    [self createOperation];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)createOperation {
+    ATOperationModel *firstModel = [[ATOperationModel alloc] init];
     firstModel.name = @"1";
     firstModel.birthday = @(12);
-    ATTestModel *secondModel = [[ATTestModel alloc] init];
+    ATOperationModel *secondModel = [[ATOperationModel alloc] init];
     secondModel.name = @"1";
     secondModel.birthday = @(12);
     if ([firstModel isEqual:secondModel]) {
@@ -30,7 +39,7 @@
     else {
         NSLog(@"不同");
     }
-    ATTestModel *thirdModel = [[ATTestModel alloc] init];
+    ATOperationModel *thirdModel = [[ATOperationModel alloc] init];
     [thirdModel modifyWithName:nil];
     
     NSLog(@"isMainThread：%d currentThread:%@",[NSThread isMainThread],[NSThread currentThread]);
@@ -38,7 +47,7 @@
     //1 创建队列
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
     
-//   [NSOperationQueue mainQueue];
+    //   [NSOperationQueue mainQueue];
     //https://www.jianshu.com/p/0bbfbc41d181
     //2.1 创建操作1
     NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
@@ -57,11 +66,6 @@
     [queue addOperation:operation1];
     //3.2 加入队列方式2
     [queue addOperations:@[operation2,operation3] waitUntilFinished:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

@@ -14,11 +14,13 @@
 char eName;
 
 - (void)setEnglishName:(NSString *)englishName {
-    objc_setAssociatedObject(self, &eName, englishName, OBJC_ASSOCIATION_COPY_NONATOMIC);
+//    objc_setAssociatedObject(self, &eName, englishName, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(englishName), englishName, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)englishName {
-    return objc_getAssociatedObject(self, &eName);
+//    return objc_getAssociatedObject(self, &eName);
+    return objc_getAssociatedObject(self, @selector(englishName));
 }
 
 @end

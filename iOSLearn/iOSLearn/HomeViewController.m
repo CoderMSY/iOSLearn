@@ -17,7 +17,8 @@ static NSString *const kText_pool = @"autoreleasePool";
 static NSString *const kText_video = @"视频";
 static NSString *const kText_sort = @"排序";
 static NSString *const kText_block = @"block";
-
+static NSString *const kText_storage = @"数据持久化";
+static NSString *const kText_timer = @"定时器";
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -52,7 +53,7 @@ static NSString *const kText_block = @"block";
 #pragma mark - private methods
 
 - (void)loadDataSource {
-    self.dataSource = @[kText_copy,kText_runtime,kText_KVC,kText_KVO,kText_thread,kText_pool,kText_sort,kText_block];
+    self.dataSource = @[kText_copy,kText_runtime,kText_KVC,kText_KVO,kText_thread,kText_pool,kText_sort,kText_block,kText_storage,kText_timer];
     [self.tableView reloadData];
 }
 
@@ -98,6 +99,12 @@ static NSString *const kText_block = @"block";
     }
     else if ([text isEqualToString:kText_block]) {
         viewCtrName = @"ATBlockViewController";
+    }
+    else if ([text isEqualToString:kText_storage]) {
+        viewCtrName = @"ATStorageViewController";
+    }
+    else if ([text isEqualToString:kText_timer]) {
+        viewCtrName = @"ATTimerViewController";
     }
     UIViewController *viewController;
     if (viewCtrName.length > 0) {
