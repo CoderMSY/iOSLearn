@@ -2,25 +2,27 @@
 //  ATThreadViewModel.m
 //  iOSLearn
 //
-//  Created by SimonMiao on 2018/4/30.
+//  Created by SimonMiao on 2018/5/11.
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
 #import "ATThreadViewModel.h"
-#import "ATOperationViewController.h"
-
 #import "ATCommonTableModel.h"
 
 @implementation ATThreadViewModel
 
 - (NSArray *)getDataSource {
-
+    
     NSArray *dataArr = @[@{
-                             kCmn_title : kThreadText_GCD,
+                             kCmn_title : kThreadText_saleTicket,
                              kCmn_detail : @"",
                              },
                          @{
-                             kCmn_title : kThreadText_operation,
+                             kCmn_title : kThreadText_memory,
+                             kCmn_detail : @"",
+                             },
+                         @{
+                             kCmn_title : kThreadText_threadRunLoop,
                              kCmn_detail : @"",
                              },
                          ];
@@ -37,12 +39,6 @@
     }
     
     return dataSource;
-}
-
-- (void)pushOperationViewController {
-    ATOperationViewController *ctr = [[ATOperationViewController alloc] init];
-    
-    [self.viewController.navigationController pushViewController:ctr animated:YES];
 }
 
 @end

@@ -11,4 +11,8 @@
 
 @implementation ATKVOModel
 
+- (void)dealloc {
+    NSLog(@"-------------->%@,%s,%d",NSStringFromClass(self.class),__FUNCTION__,__LINE__);
+}
+
 @end

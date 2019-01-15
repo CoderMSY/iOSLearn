@@ -89,7 +89,7 @@ static NSString *const kText_timer = @"定时器";
         viewCtrName = @"ATKVOViewController";
     }
     else if ([text isEqualToString:kText_thread]) {
-        viewCtrName = @"ATThreadViewController";
+        viewCtrName = @"ATMultiThreadViewController";
     }
     else if ([text isEqualToString:kText_pool]) {
         viewCtrName = @"ATPoolViewController";

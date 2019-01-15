@@ -29,16 +29,22 @@
 		7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF2207B4C780069AEA1 /* ATKVOViewController.m */; };
 		7EB64EF5207B4C780069AEA1 /* ATKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */; };
 		7EB64EF8207B4FF80069AEA1 /* ATKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */; };
-		7ED58A3820805C6500ABEA3D /* ATThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED58A3720805C6500ABEA3D /* ATThreadViewController.m */; };
+		7ED58A3820805C6500ABEA3D /* ATMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED58A3720805C6500ABEA3D /* ATMultiThreadViewController.m */; };
 		7EDDE6F220962A11001A14E8 /* ATOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDE6F120962A11001A14E8 /* ATOperationViewController.m */; };
 		7EDDE6F520962A4F001A14E8 /* ATOperationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDE6F420962A4F001A14E8 /* ATOperationModel.m */; };
-		7EDDE6F820962B31001A14E8 /* ATThreadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDE6F720962B31001A14E8 /* ATThreadViewModel.m */; };
+		7EDDE6F820962B31001A14E8 /* ATMultiThreadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDE6F720962B31001A14E8 /* ATMultiThreadViewModel.m */; };
 		7EDDE6FC20962E52001A14E8 /* ATGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDE6FB20962E52001A14E8 /* ATGCDViewController.m */; };
 		7EE1F00F2079BDEE00783702 /* ATDetailCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F00E2079BDEE00783702 /* ATDetailCodeViewController.m */; };
 		7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F0112079BFC800783702 /* ATBaseViewModel.m */; };
 		7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F0142079C01600783702 /* ATRuntimeViewModel.m */; };
 		7EE1F0192079FE0500783702 /* runtimeDemo.md in Resources */ = {isa = PBXBuildFile; fileRef = 7EE1F0182079FE0500783702 /* runtimeDemo.md */; };
 		7EE1F01C207A0B2E00783702 /* ATCommonTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1F01B207A0B2E00783702 /* ATCommonTableModel.m */; };
+		7EE8280E20A575C200B4E7D3 /* ATThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8280D20A575C200B4E7D3 /* ATThreadViewController.m */; };
+		7EE8281120A583D400B4E7D3 /* ATThreadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8281020A583D400B4E7D3 /* ATThreadViewModel.m */; };
+		7EE8281620A584E100B4E7D3 /* ATThreadSaleTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8281520A584E100B4E7D3 /* ATThreadSaleTicketViewController.m */; };
+		7EE8281A20A584FB00B4E7D3 /* ATThreadMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8281920A584FB00B4E7D3 /* ATThreadMemoryViewController.m */; };
+		7EE8281E20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8281D20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m */; };
+		7EE8282120A59D7E00B4E7D3 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8282020A59D7E00B4E7D3 /* Foo.m */; };
 		7EF63E10207466EB00F6F841 /* ATRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */; };
 		7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E12207466FD00F6F841 /* ATPerson.m */; };
 		7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E152074708700F6F841 /* ATPerson+addProperty.m */; };
@@ -113,15 +119,15 @@
 		7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATKVOViewController.xib; sourceTree = "<group>"; };
 		7EB64EF6207B4FF80069AEA1 /* ATKVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVOModel.h; sourceTree = "<group>"; };
 		7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVOModel.m; sourceTree = "<group>"; };
-		7ED58A3620805C6500ABEA3D /* ATThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadViewController.h; sourceTree = "<group>"; };
-		7ED58A3720805C6500ABEA3D /* ATThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadViewController.m; sourceTree = "<group>"; };
+		7ED58A3620805C6500ABEA3D /* ATMultiThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMultiThreadViewController.h; sourceTree = "<group>"; };
+		7ED58A3720805C6500ABEA3D /* ATMultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMultiThreadViewController.m; sourceTree = "<group>"; };
 		7EDDE6F020962A11001A14E8 /* ATOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATOperationViewController.h; sourceTree = "<group>"; };
 		7EDDE6F120962A11001A14E8 /* ATOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATOperationViewController.m; sourceTree = "<group>"; };
 		7EDDE6F320962A4F001A14E8 /* ATOperationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATOperationModel.h; sourceTree = "<group>"; };
 		7EDDE6F420962A4F001A14E8 /* ATOperationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATOperationModel.m; sourceTree = "<group>"; };
-		7EDDE6F620962B31001A14E8 /* ATThreadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadViewModel.h; sourceTree = "<group>"; };
-		7EDDE6F720962B31001A14E8 /* ATThreadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadViewModel.m; sourceTree = "<group>"; };
-		7EDDE6F920962BB3001A14E8 /* ATThreadDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadDefine.h; sourceTree = "<group>"; };
+		7EDDE6F620962B31001A14E8 /* ATMultiThreadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMultiThreadViewModel.h; sourceTree = "<group>"; };
+		7EDDE6F720962B31001A14E8 /* ATMultiThreadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMultiThreadViewModel.m; sourceTree = "<group>"; };
+		7EDDE6F920962BB3001A14E8 /* ATMultiThreadDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMultiThreadDefine.h; sourceTree = "<group>"; };
 		7EDDE6FA20962E52001A14E8 /* ATGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATGCDViewController.h; sourceTree = "<group>"; };
 		7EDDE6FB20962E52001A14E8 /* ATGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATGCDViewController.m; sourceTree = "<group>"; };
 		7EE1F00D2079BDEE00783702 /* ATDetailCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDetailCodeViewController.h; sourceTree = "<group>"; };
@@ -136,6 +142,19 @@
 		7EE1F01B207A0B2E00783702 /* ATCommonTableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommonTableModel.m; sourceTree = "<group>"; };
 		7EE1F01D207A10B700783702 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7EE1F01E207A113600783702 /* ATShareMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATShareMacro.h; sourceTree = "<group>"; };
+		7EE8280C20A575C200B4E7D3 /* ATThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadViewController.h; sourceTree = "<group>"; };
+		7EE8280D20A575C200B4E7D3 /* ATThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadViewController.m; sourceTree = "<group>"; };
+		7EE8280F20A583D400B4E7D3 /* ATThreadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadViewModel.h; sourceTree = "<group>"; };
+		7EE8281020A583D400B4E7D3 /* ATThreadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadViewModel.m; sourceTree = "<group>"; };
+		7EE8281220A5843E00B4E7D3 /* ATThreadDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadDefine.h; sourceTree = "<group>"; };
+		7EE8281420A584E100B4E7D3 /* ATThreadSaleTicketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadSaleTicketViewController.h; sourceTree = "<group>"; };
+		7EE8281520A584E100B4E7D3 /* ATThreadSaleTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadSaleTicketViewController.m; sourceTree = "<group>"; };
+		7EE8281820A584FB00B4E7D3 /* ATThreadMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadMemoryViewController.h; sourceTree = "<group>"; };
+		7EE8281920A584FB00B4E7D3 /* ATThreadMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadMemoryViewController.m; sourceTree = "<group>"; };
+		7EE8281C20A59D2500B4E7D3 /* ATThreadRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATThreadRunLoopViewController.h; sourceTree = "<group>"; };
+		7EE8281D20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATThreadRunLoopViewController.m; sourceTree = "<group>"; };
+		7EE8281F20A59D7E00B4E7D3 /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		7EE8282020A59D7E00B4E7D3 /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		7EF63E0E207466EB00F6F841 /* ATRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeViewController.h; sourceTree = "<group>"; };
 		7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeViewController.m; sourceTree = "<group>"; };
 		7EF63E11207466FD00F6F841 /* ATPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPerson.h; sourceTree = "<group>"; };
@@ -230,7 +249,7 @@
 				7EFF53A92092F1EB00938F24 /* Block */,
 				7EFF53A02092CA2800938F24 /* Sort */,
 				7E04291F20919787009BCABB /* KVC */,
-				7ED58A3520805C5200ABEA3D /* Thread */,
+				7ED58A3520805C5200ABEA3D /* MultiThread */,
 				7E7D4C5A207F2E9D003EBEC1 /* Video */,
 				7E7D4C56207EFA34003EBEC1 /* Pool */,
 				7E49EFB02078834B00405ED0 /* Common */,
@@ -344,26 +363,27 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
-		7ED58A3520805C5200ABEA3D /* Thread */ = {
+		7ED58A3520805C5200ABEA3D /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				7EE8280B20A5759800B4E7D3 /* Thread */,
 				7EDDE6EF209629E5001A14E8 /* Operation */,
 				7EDDE6EE209629DD001A14E8 /* GCD */,
-				7EDDE6ED209629C1001A14E8 /* Thread */,
+				7EDDE6ED209629C1001A14E8 /* MultiThread */,
 			);
-			path = Thread;
+			path = MultiThread;
 			sourceTree = "<group>";
 		};
-		7EDDE6ED209629C1001A14E8 /* Thread */ = {
+		7EDDE6ED209629C1001A14E8 /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
-				7ED58A3620805C6500ABEA3D /* ATThreadViewController.h */,
-				7ED58A3720805C6500ABEA3D /* ATThreadViewController.m */,
-				7EDDE6F620962B31001A14E8 /* ATThreadViewModel.h */,
-				7EDDE6F720962B31001A14E8 /* ATThreadViewModel.m */,
-				7EDDE6F920962BB3001A14E8 /* ATThreadDefine.h */,
+				7ED58A3620805C6500ABEA3D /* ATMultiThreadViewController.h */,
+				7ED58A3720805C6500ABEA3D /* ATMultiThreadViewController.m */,
+				7EDDE6F620962B31001A14E8 /* ATMultiThreadViewModel.h */,
+				7EDDE6F720962B31001A14E8 /* ATMultiThreadViewModel.m */,
+				7EDDE6F920962BB3001A14E8 /* ATMultiThreadDefine.h */,
 			);
-			path = Thread;
+			path = MultiThread;
 			sourceTree = "<group>";
 		};
 		7EDDE6EE209629DD001A14E8 /* GCD */ = {
@@ -392,6 +412,50 @@
 				7EE1F0182079FE0500783702 /* runtimeDemo.md */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		7EE8280B20A5759800B4E7D3 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				7EE8280C20A575C200B4E7D3 /* ATThreadViewController.h */,
+				7EE8280D20A575C200B4E7D3 /* ATThreadViewController.m */,
+				7EE8280F20A583D400B4E7D3 /* ATThreadViewModel.h */,
+				7EE8281020A583D400B4E7D3 /* ATThreadViewModel.m */,
+				7EE8281220A5843E00B4E7D3 /* ATThreadDefine.h */,
+				7EE8281B20A59D0800B4E7D3 /* ThreadRunLoop */,
+				7EE8281720A584E500B4E7D3 /* ThreadMemory */,
+				7EE8281320A584D000B4E7D3 /* ThreadSaleTicket */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		7EE8281320A584D000B4E7D3 /* ThreadSaleTicket */ = {
+			isa = PBXGroup;
+			children = (
+				7EE8281420A584E100B4E7D3 /* ATThreadSaleTicketViewController.h */,
+				7EE8281520A584E100B4E7D3 /* ATThreadSaleTicketViewController.m */,
+			);
+			path = ThreadSaleTicket;
+			sourceTree = "<group>";
+		};
+		7EE8281720A584E500B4E7D3 /* ThreadMemory */ = {
+			isa = PBXGroup;
+			children = (
+				7EE8281820A584FB00B4E7D3 /* ATThreadMemoryViewController.h */,
+				7EE8281920A584FB00B4E7D3 /* ATThreadMemoryViewController.m */,
+			);
+			path = ThreadMemory;
+			sourceTree = "<group>";
+		};
+		7EE8281B20A59D0800B4E7D3 /* ThreadRunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				7EE8281C20A59D2500B4E7D3 /* ATThreadRunLoopViewController.h */,
+				7EE8281D20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m */,
+				7EE8281F20A59D7E00B4E7D3 /* Foo.h */,
+				7EE8282020A59D7E00B4E7D3 /* Foo.m */,
+			);
+			path = ThreadRunLoop;
 			sourceTree = "<group>";
 		};
 		7EF63E0D2074652700F6F841 /* Runtime */ = {
@@ -617,7 +681,9 @@
 			files = (
 				7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */,
 				7E5599E520995B0D00EC307A /* ATTimerViewController.m in Sources */,
-				7EDDE6F820962B31001A14E8 /* ATThreadViewModel.m in Sources */,
+				7EE8281A20A584FB00B4E7D3 /* ATThreadMemoryViewController.m in Sources */,
+				7EDDE6F820962B31001A14E8 /* ATMultiThreadViewModel.m in Sources */,
+				7EE8281120A583D400B4E7D3 /* ATThreadViewModel.m in Sources */,
 				7E97EC2920944A8200F81D57 /* ATKeyedArchiverModel.m in Sources */,
 				7E7D4C59207EFA66003EBEC1 /* ATPoolViewController.m in Sources */,
 				7E97EC2620944A1000F81D57 /* ATStorageViewController.m in Sources */,
@@ -625,13 +691,17 @@
 				7EE1F01C207A0B2E00783702 /* ATCommonTableModel.m in Sources */,
 				7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */,
 				7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */,
+				7EE8281E20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m in Sources */,
 				7E0E18AE207381A300B6C1F9 /* ATDeepShallowCopyViewController.m in Sources */,
 				7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */,
-				7ED58A3820805C6500ABEA3D /* ATThreadViewController.m in Sources */,
+				7ED58A3820805C6500ABEA3D /* ATMultiThreadViewController.m in Sources */,
 				7E0A9B9D2073673100524B2D /* ViewController.m in Sources */,
+				7EE8281620A584E100B4E7D3 /* ATThreadSaleTicketViewController.m in Sources */,
 				7E0A9BA82073673400524B2D /* main.m in Sources */,
 				7E49EFB32078836700405ED0 /* ATCommonTableView.m in Sources */,
+				7EE8280E20A575C200B4E7D3 /* ATThreadViewController.m in Sources */,
 				7EDDE6F220962A11001A14E8 /* ATOperationViewController.m in Sources */,
+				7EE8282120A59D7E00B4E7D3 /* Foo.m in Sources */,
 				7EFF53AC2092F1FF00938F24 /* ATBlockViewController.m in Sources */,
 				7EDDE6FC20962E52001A14E8 /* ATGCDViewController.m in Sources */,
 				7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */,

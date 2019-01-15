@@ -2,16 +2,17 @@
 //  ATThreadViewController.m
 //  iOSLearn
 //
-//  Created by SimonMiao on 2018/4/13.
+//  Created by SimonMiao on 2018/5/11.
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
 #import "ATThreadViewController.h"
 #import <Masonry/Masonry.h>
 
-#import "ATThreadViewModel.h"
 #import "ATCommonTableView.h"
 #import "ATCommonTableModel.h"
+
+#import "ATThreadViewModel.h"
 
 @interface ATThreadViewController () <ATCommonTableViewDelegate>
 
@@ -22,9 +23,12 @@
 
 @implementation ATThreadViewController
 
+#pragma mark - lifecycle methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     [self.view addSubview:self.commonTableView];
     [self initConstraints];
     
@@ -36,7 +40,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - lifecycle methods
+- (void)dealloc {
+    
+}
+
 
 
 #pragma mark - public methods
@@ -60,11 +67,14 @@
 - (void)commonTableView:(ATCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ATCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
     NSString *viewCtrName;
-    if ([cmnModel.title isEqualToString:kThreadText_GCD]) {
-        viewCtrName = @"ATGCDViewController";
+    if ([cmnModel.title isEqualToString:kThreadText_saleTicket]) {
+        viewCtrName = @"ATThreadSaleTicketViewController";
     }
-    else if ([cmnModel.title isEqualToString:kThreadText_operation]) {
-        viewCtrName = @"ATOperationViewController";
+    else if ([cmnModel.title isEqualToString:kThreadText_memory]) {
+        viewCtrName = @"ATThreadMemoryViewController";
+    }
+    else if ([cmnModel.title isEqualToString:kThreadText_threadRunLoop]) {
+        viewCtrName = @"ATThreadRunLoopViewController";
     }
     
     UIViewController *viewController;
@@ -94,6 +104,7 @@
     }
     return _commonTableView;
 }
+
 
 
 

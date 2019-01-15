@@ -1,5 +1,5 @@
 //
-//  ATThreadViewController.h
+//  ATMultiThreadViewController.h
 //  iOSLearn
 //
 //  Created by SimonMiao on 2018/4/13.
@@ -8,6 +8,6 @@
 
 #import "ATBaseViewController.h"
 
-@interface ATThreadViewController : ATBaseViewController
+@interface ATMultiThreadViewController : ATBaseViewController
 
 @end

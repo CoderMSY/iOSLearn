@@ -42,7 +42,7 @@
 
 - (void)dealloc {
     /* 3.移除KVO */
-    [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(kvoNum)) context:nil];
+    [self.kvoModel removeObserver:self forKeyPath:NSStringFromSelector(@selector(kvoNum)) context:nil];
 }
 
 - (IBAction)addBtnClicked:(UIButton *)sender {
