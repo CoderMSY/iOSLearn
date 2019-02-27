@@ -26,6 +26,8 @@
 		7E7D4C59207EFA66003EBEC1 /* ATPoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7D4C58207EFA66003EBEC1 /* ATPoolViewController.m */; };
 		7E97EC2620944A1000F81D57 /* ATStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E97EC2520944A1000F81D57 /* ATStorageViewController.m */; };
 		7E97EC2920944A8200F81D57 /* ATKeyedArchiverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E97EC2820944A8200F81D57 /* ATKeyedArchiverModel.m */; };
+		7EB506202225437F00F7D957 /* ATStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5061F2225437F00F7D957 /* ATStoreViewController.m */; };
+		7EB506242225447A00F7D957 /* ATStoreArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB506232225447A00F7D957 /* ATStoreArchiverViewController.m */; };
 		7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF2207B4C780069AEA1 /* ATKVOViewController.m */; };
 		7EB64EF5207B4C780069AEA1 /* ATKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */; };
 		7EB64EF8207B4FF80069AEA1 /* ATKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */; };
@@ -114,6 +116,10 @@
 		7E97EC2520944A1000F81D57 /* ATStorageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStorageViewController.m; sourceTree = "<group>"; };
 		7E97EC2720944A8200F81D57 /* ATKeyedArchiverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKeyedArchiverModel.h; sourceTree = "<group>"; };
 		7E97EC2820944A8200F81D57 /* ATKeyedArchiverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKeyedArchiverModel.m; sourceTree = "<group>"; };
+		7EB5061E2225437F00F7D957 /* ATStoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStoreViewController.h; sourceTree = "<group>"; };
+		7EB5061F2225437F00F7D957 /* ATStoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStoreViewController.m; sourceTree = "<group>"; };
+		7EB506222225447A00F7D957 /* ATStoreArchiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStoreArchiverViewController.h; sourceTree = "<group>"; };
+		7EB506232225447A00F7D957 /* ATStoreArchiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStoreArchiverViewController.m; sourceTree = "<group>"; };
 		7EB64EF1207B4C780069AEA1 /* ATKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVOViewController.h; sourceTree = "<group>"; };
 		7EB64EF2207B4C780069AEA1 /* ATKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVOViewController.m; sourceTree = "<group>"; };
 		7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATKVOViewController.xib; sourceTree = "<group>"; };
@@ -244,6 +250,7 @@
 				7E0E18B0207382EA00B6C1F9 /* ATBaseViewController.m */,
 				7EE1F0102079BFC800783702 /* ATBaseViewModel.h */,
 				7EE1F0112079BFC800783702 /* ATBaseViewModel.m */,
+				7EB5061D2225435F00F7D957 /* Store */,
 				7E5599E220995AFA00EC307A /* Timer */,
 				7E97EC22209449AD00F81D57 /* storage */,
 				7EFF53A92092F1EB00938F24 /* Block */,
@@ -349,6 +356,25 @@
 				7E97EC2820944A8200F81D57 /* ATKeyedArchiverModel.m */,
 			);
 			path = storage;
+			sourceTree = "<group>";
+		};
+		7EB5061D2225435F00F7D957 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7EB5061E2225437F00F7D957 /* ATStoreViewController.h */,
+				7EB5061F2225437F00F7D957 /* ATStoreViewController.m */,
+				7EB506212225445F00F7D957 /* Archiver */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7EB506212225445F00F7D957 /* Archiver */ = {
+			isa = PBXGroup;
+			children = (
+				7EB506222225447A00F7D957 /* ATStoreArchiverViewController.h */,
+				7EB506232225447A00F7D957 /* ATStoreArchiverViewController.m */,
+			);
+			path = Archiver;
 			sourceTree = "<group>";
 		};
 		7EB64EED207B3CEE0069AEA1 /* KVO */ = {
@@ -588,6 +614,7 @@
 		7E0A9B8D2073673100524B2D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AT;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Avatar;
 				TargetAttributes = {
@@ -680,6 +707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */,
+				7EB506202225437F00F7D957 /* ATStoreViewController.m in Sources */,
 				7E5599E520995B0D00EC307A /* ATTimerViewController.m in Sources */,
 				7EE8281A20A584FB00B4E7D3 /* ATThreadMemoryViewController.m in Sources */,
 				7EDDE6F820962B31001A14E8 /* ATMultiThreadViewModel.m in Sources */,
@@ -701,6 +729,7 @@
 				7E49EFB32078836700405ED0 /* ATCommonTableView.m in Sources */,
 				7EE8280E20A575C200B4E7D3 /* ATThreadViewController.m in Sources */,
 				7EDDE6F220962A11001A14E8 /* ATOperationViewController.m in Sources */,
+				7EB506242225447A00F7D957 /* ATStoreArchiverViewController.m in Sources */,
 				7EE8282120A59D7E00B4E7D3 /* Foo.m in Sources */,
 				7EFF53AC2092F1FF00938F24 /* ATBlockViewController.m in Sources */,
 				7EDDE6FC20962E52001A14E8 /* ATGCDViewController.m in Sources */,

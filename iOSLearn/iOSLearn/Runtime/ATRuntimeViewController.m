@@ -69,7 +69,7 @@
     NSLog(@"=================================================================");
     unsigned int count;
 
-    //获取成员变量的数组的指针
+    // 拷贝成员变量列表。返回的一个Ivar列表的指针
     Ivar *ivars = class_copyIvarList([ATPerson class], &count);
     
     for (int i=0 ; i<count; i++) {
@@ -80,7 +80,7 @@
         NSString *key = [NSString stringWithUTF8String:name];
         NSLog(@"%d == %@",i,key);
     }
-    // 记得释放
+    // 释放资源
     free(ivars);
     //如果你的成员私有,也可以获取到 比如_education
 }

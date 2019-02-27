@@ -110,6 +110,20 @@
     string = @"123456";
     NSLog(@"string = %@ copyString = %@ tempString = %@", string, copyString, tempString);
     NSLog(@"string = %p copyString = %p tempString = %p", string, copyString, tempString);
+    
+    id tempCopyStr = [mutableCopyString copy];
+//    [tempMutCopyStr appendString:@"modify"];copy返回的是不可变对象，mstr2不能被修改，因此会发生崩溃
+    NSLog(@"不可变字符串%p - %@\r\n", tempCopyStr, tempCopyStr);
+    
+    if ([tempCopyStr isKindOfClass:[NSMutableString class]]) {
+        NSLog(@"可变字符串%p - %@\r\n", tempCopyStr, tempCopyStr);
+        NSMutableString *tempMutCopyStr = (NSMutableString *)tempCopyStr;
+        
+        NSLog(@"%p - %@\r\n", tempMutCopyStr, tempMutCopyStr);
+    }
+    else {
+        
+    }
 }
 
 #pragma mark - getter && setter
