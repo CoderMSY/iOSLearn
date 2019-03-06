@@ -13,4 +13,6 @@
 // 英文名
 @property (nonatomic, copy) NSString *englishName;
 
+@property (nonatomic, copy) NSString *schoolName;//!<学校
+
 @end

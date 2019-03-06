@@ -23,4 +23,12 @@ char eName;
     return objc_getAssociatedObject(self, @selector(englishName));
 }
 
+- (void)setSchoolName:(NSString *)schoolName {
+    objc_setAssociatedObject(self, @selector(schoolName), schoolName, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSString *)schoolName {
+    return objc_getAssociatedObject(self, @selector(schoolName));
+}
+
 @end

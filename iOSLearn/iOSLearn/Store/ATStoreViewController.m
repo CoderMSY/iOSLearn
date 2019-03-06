@@ -29,6 +29,7 @@ static NSString *const kTextStore_archiver = @"归档";
     [self.view addSubview:self.tableView];
     
     [self loadDataSource];
+    [self createWeakPointer];
 }
 
 #pragma mark - public methods
@@ -39,6 +40,38 @@ static NSString *const kTextStore_archiver = @"归档";
 - (void)loadDataSource {
     self.dataSource = @[kTextStore_archiver];
     [self.tableView reloadData];
+}
+
+- (void)createWeakPointer {
+    //初始化一个弱引用数组对象
+    NSPointerArray *pointerArray = [NSPointerArray weakObjectsPointerArray];
+    for (NSInteger i = 0; i < 10; i ++) {
+        NSObject *obj = [NSObject new];
+        [pointerArray addPointer:(__bridge void * _Nullable)(obj)];
+    }
+    ///输出数组中的所有对象,如果没有对象会输出一个空数组
+    NSArray *array = pointerArray.allObjects;
+    NSLog(@"array:%@", array);
+    //输出数组中的元素个数,包括NULL
+    NSLog(@"%lu", (unsigned long)pointerArray.count);//此时输出:10,因为NSObject在for循环之后就被释放了
+    //先数组中添加一个NULL
+    [pointerArray addPointer:NULL];
+    NSLog(@"%lu", (unsigned long)pointerArray.count);
+    //清空数组中的所有NULL,注意:经过测试如果直接compact是无法清空NULL,需要在compact之前,调用一次[_weakPointerArray addPointer:NULL],才可以清空
+    [pointerArray compact];
+    NSLog(@"%lu", (unsigned long)pointerArray.count);//输出:0
+    
+    //注意:如果直接往_weakPointerArray中添加对象,那么addPointer方法执行完毕之后,NSObject会直接被释放掉
+    [pointerArray addPointer:(__bridge void * _Nullable)([NSObject new])];
+    NSLog(@"%@",[pointerArray allObjects]);//输出:空数组 NSPointArray[2401:115640] ()
+    
+    //应该这样添加对象
+    NSObject *obj = [NSObject new];
+    [pointerArray addPointer:(__bridge void * _Nullable)obj];
+    NSLog(@"%@",[pointerArray allObjects]);////输出:NSPointArray[2401:115640] ("<NSObject: 0x600000b61fd0>")
+    /**
+     NSMapTable 对应 NSDictionary ； NSHashTable 对应 NSSet ； NSPointerArray 对应 NSArray 
+     */
 }
 
 #pragma mark - UITableViewDataSource

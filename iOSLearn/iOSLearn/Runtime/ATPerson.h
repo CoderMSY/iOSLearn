@@ -25,6 +25,8 @@
 @property (nonatomic,copy) NSString *job;//工作
 @property (nonatomic,copy) NSString *native;//籍贯
 
+@property (nonatomic, copy) NSString *testName;
+
 #pragma mark -方法
 - (void)eat;
 - (void)sleep;

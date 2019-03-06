@@ -10,12 +10,17 @@
 #import <objc/runtime.h>
 
 @interface ATPerson () <NSCoding>
-
+{
+    NSString *_testName;
+}
 @property (nonatomic,copy) NSString *education;//学历 私有变量
 
 @end
 
 @implementation ATPerson
+
+//@synthesize testName = _testName;
+@dynamic testName;
 
 - (void)eat{
 }
@@ -35,5 +40,15 @@
 //- (void)fromCity:(NSString *)city {
 //    
 //}
+
+- (void)setTestName:(NSString *)testName {
+    _testName = testName;
+}
+
+- (NSString *)testName {
+    return _testName;
+}
+
+
 
 @end

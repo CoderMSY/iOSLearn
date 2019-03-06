@@ -41,6 +41,8 @@
     
     self.student.englishName = @"Simon Miao";
     NSLog(@"Student English name is %@",self.student.englishName);
+    self.student.testName = @"This is testName";
+    NSLog(@"what is this？--%@", self.student.testName);
     
 }
 
