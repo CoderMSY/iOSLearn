@@ -1,5 +1,5 @@
 //
-//  ATCommonTableModel.h
+//  ATOldCommonTableModel.h
 //  iOSLearn
 //
 //  Created by SimonMiao on 2018/4/8.
@@ -12,7 +12,7 @@ static NSString *const kCmn_title = @"commonTitle";
 static NSString *const kCmn_detail = @"commonDetail";
 static NSString *const kCmn_action = @"commonAction";
 
-@interface ATCommonTableModel : NSObject
+@interface ATOldCommonTableModel : NSObject
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *detail;

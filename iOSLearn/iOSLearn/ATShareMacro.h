@@ -17,4 +17,10 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
+#ifdef DEBUG // 处于开发阶段
+#define ATLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define ATLog(...)
+#endif
+
 #endif /* ATShareMacro_h */

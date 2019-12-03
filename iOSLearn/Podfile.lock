@@ -1,28 +1,28 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - ATBase (0.1.1)
-  - CocoaLumberjack (3.4.1):
-    - CocoaLumberjack/Default (= 3.4.1)
-    - CocoaLumberjack/Extensions (= 3.4.1)
-  - CocoaLumberjack/Default (3.4.1)
-  - CocoaLumberjack/Extensions (3.4.1):
-    - CocoaLumberjack/Default
-  - CYLTabBarController (1.17.6)
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - CYLTabBarController (1.28.4):
+    - CYLTabBarController/Core (= 1.28.4)
+  - CYLTabBarController/Core (1.28.4)
   - Masonry (1.1.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.2.3)
   - "UIAlertController+Blocks (0.9.2)"
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -30,33 +30,35 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - ATBase
   - CocoaLumberjack
   - CYLTabBarController
   - Masonry
+  - MJExtension
+  - MJRefresh
   - "UIAlertController+Blocks"
   - YYKit
 
 SPEC REPOS:
-  https://gitee.com/simonmiao/ATSpecs.git:
-    - ATBase
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaLumberjack
     - CYLTabBarController
     - Masonry
+    - MJExtension
+    - MJRefresh
     - "UIAlertController+Blocks"
     - YYKit
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
-  ATBase: 28453940316d8ec39eda7f6cd5190fc7e007fcf7
-  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
-  CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  CYLTabBarController: d7160abd77b3a94626cff123fdfaa4f3badde20d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2fd114bab2222e96e1b0e6f39487f0c2b82a2fd5
+PODFILE CHECKSUM: 469ea846165d8f48ec34a26e3e210fe2c1904cec
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.8.4

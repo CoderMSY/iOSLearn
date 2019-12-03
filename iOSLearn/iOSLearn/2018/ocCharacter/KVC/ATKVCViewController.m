@@ -17,29 +17,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSMutableDictionary *mutDic = [NSMutableDictionary dictionary];
+//    NSMutableDictionary *mutDic = [NSMutableDictionary dictionary];
 //    mutDic setObject:<#(nonnull id)#> forKey:<#(nonnull id<NSCopying>)#>
 //    [mutDic setValue:<#(nullable id)#> forKey:<#(nonnull NSString *)#>]
-    NSString *str = @"China";
+//    NSString *str = @"China";
 //    [str setValue:@"America" forKey:@"name"];
-    NSLog(@"%@",str);
+//    NSLog(@"%@",str);
+    
+    NSDictionary *dic = @{
+        @"name": @"Mercy",
+        @"age": @(23),
+        @"gender": @(1),
+        @"hobby": @"basketball"
+    };
     
     ATStudentKVCModel *kvcModel = [ATStudentKVCModel new];
-    [kvcModel setValue:@"你好" forKey:@"name"];
-    NSString *name = [kvcModel valueForKey:NSStringFromSelector(@selector(name))];
-    NSLog(@"%@",name);
+    [kvcModel setValuesForKeysWithDictionary:dic];
+    NSDictionary *objDic = [kvcModel dictionaryWithValuesForKeys:@[@"name", @"age", @"gender"]];
+    ATLog(@"objDic:%@", objDic);
+//    [kvcModel setValue:@"23" forKey:@"age"];
+//    NSString *hobby = [kvcModel valueForKey:@"hobby"];
+//    ATLog(@"%@", hobby);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-
-
-- (void)configOne:(NSString *)one two:(NSString *)two three:(NSString *)three {
-    
 }
 
 /*

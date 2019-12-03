@@ -11,7 +11,7 @@
 #import "ATDetailCodeViewController.h"
 #import "ATPerson.h"
 
-#import "ATCommonTableModel.h"
+#import "ATOldCommonTableModel.h"
 
 @implementation ATRuntimeViewModel
 
@@ -114,7 +114,7 @@
     for (NSInteger i = 0; i < dataArr.count; i ++) {
         NSDictionary *dic = dataArr[i];
         
-        ATCommonTableModel *model = [[ATCommonTableModel alloc] init];
+        ATOldCommonTableModel *model = [[ATOldCommonTableModel alloc] init];
         model.title = dic[kCmn_title];
         model.detail = dic[kCmn_detail];
         model.actionName = dic[kCmn_action];

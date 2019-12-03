@@ -1,23 +1,23 @@
 //
-//  ATCommonTableView.m
+//  ATOldCommonTableView.m
 //  iOSLearn
 //
 //  Created by SimonMiao on 2018/4/7.
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
-#import "ATCommonTableView.h"
+#import "ATOldCommonTableView.h"
 #import <Masonry/Masonry.h>
 
-#import "ATCommonTableModel.h"
+#import "ATOldCommonTableModel.h"
 
-@interface ATCommonTableView () <UITableViewDelegate, UITableViewDataSource>
+@interface ATOldCommonTableView () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation ATCommonTableView
+@implementation ATOldCommonTableView
 
 #pragma mark - lifecycle methods
 
@@ -35,7 +35,7 @@
 
 #pragma mark - public methods
 
-- (void)setDataSource:(NSArray<ATCommonTableModel *> *)dataSource {
+- (void)setDataSource:(NSArray<ATOldCommonTableModel *> *)dataSource {
     _dataSource = dataSource;
     
     [self.tableView reloadData];
@@ -56,7 +56,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ATCommonTableModel *model = self.dataSource[indexPath.row];
+    ATOldCommonTableModel *model = self.dataSource[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:NSStringFromClass([UITableViewCell class])];

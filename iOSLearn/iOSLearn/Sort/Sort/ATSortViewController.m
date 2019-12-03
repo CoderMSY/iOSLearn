@@ -10,13 +10,13 @@
 #import <Masonry/Masonry.h>
 
 #import "ATSortViewModel.h"
-#import "ATCommonTableView.h"
-#import "ATCommonTableModel.h"
+#import "ATOldCommonTableView.h"
+#import "ATOldCommonTableModel.h"
 
-@interface ATSortViewController () <ATCommonTableViewDelegate>
+@interface ATSortViewController () <ATOldCommonTableViewDelegate>
 
 @property (nonatomic, strong) ATSortViewModel *viewModel;
-@property (nonatomic, strong) ATCommonTableView *commonTableView;
+@property (nonatomic, strong) ATOldCommonTableView *commonTableView;
 
 @end
 
@@ -114,10 +114,10 @@
     NSLog(@"选择排序 最终结果%@",arr_M);
 }
 
-#pragma mark - ATCommonTableViewDelegate
+#pragma mark - ATOldCommonTableViewDelegate
 
-- (void)commonTableView:(ATCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ATCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
+- (void)commonTableView:(ATOldCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ATOldCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
     if (cmnModel.actionName.length > 0) {
         SEL sel = NSSelectorFromString(cmnModel.actionName);
         if ([self respondsToSelector:sel]) {
@@ -143,9 +143,9 @@
     return _viewModel;
 }
 
-- (ATCommonTableView *)commonTableView {
+- (ATOldCommonTableView *)commonTableView {
     if (!_commonTableView) {
-        _commonTableView = [[ATCommonTableView alloc] init];
+        _commonTableView = [[ATOldCommonTableView alloc] init];
         _commonTableView.delegate = self;
     }
     return _commonTableView;

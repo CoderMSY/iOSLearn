@@ -7,9 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+//#import "HomeViewController.h"
+#import "ATTabBarControllerConfig.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) ATTabBarControllerConfig *tabBarConfig;
 
 @end
 
@@ -20,9 +23,10 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    HomeViewController *viewCtr = [[HomeViewController alloc] init];
-    UINavigationController *navCtr = [[UINavigationController alloc] initWithRootViewController:viewCtr];
-    self.window.rootViewController = navCtr;
+    self.tabBarConfig = [[ATTabBarControllerConfig alloc] init];
+//    HomeViewController *viewCtr = [[HomeViewController alloc] init];
+//    UINavigationController *navCtr = [[UINavigationController alloc] initWithRootViewController:viewCtr];
+    self.window.rootViewController = self.tabBarConfig.tabBarController;
     
     [self.window makeKeyAndVisible];
     

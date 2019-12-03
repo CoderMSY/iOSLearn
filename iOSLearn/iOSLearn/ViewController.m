@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"知识点";
     [self.view addSubview:self.tableView];
+    
 }
 
 

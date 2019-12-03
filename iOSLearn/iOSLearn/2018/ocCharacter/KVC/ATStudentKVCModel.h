@@ -11,5 +11,7 @@
 @interface ATStudentKVCModel : NSObject
 
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSNumber *age;
+@property (nonatomic, strong) NSNumber *gender;
 
 @end

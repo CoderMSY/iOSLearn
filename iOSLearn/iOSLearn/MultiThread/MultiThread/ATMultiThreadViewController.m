@@ -10,13 +10,13 @@
 #import <Masonry/Masonry.h>
 
 #import "ATMultiThreadViewModel.h"
-#import "ATCommonTableView.h"
-#import "ATCommonTableModel.h"
+#import "ATOldCommonTableView.h"
+#import "ATOldCommonTableModel.h"
 
-@interface ATMultiThreadViewController () <ATCommonTableViewDelegate>
+@interface ATMultiThreadViewController () <ATOldCommonTableViewDelegate>
 
 @property (nonatomic, strong) ATMultiThreadViewModel *viewModel;
-@property (nonatomic, strong) ATCommonTableView *commonTableView;
+@property (nonatomic, strong) ATOldCommonTableView *commonTableView;
 
 @end
 
@@ -55,10 +55,10 @@
     self.commonTableView.dataSource = dataSource;
 }
 
-#pragma mark - ATCommonTableViewDelegate
+#pragma mark - ATOldCommonTableViewDelegate
 
-- (void)commonTableView:(ATCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ATCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
+- (void)commonTableView:(ATOldCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ATOldCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
     NSString *viewCtrName;
     if ([cmnModel.title isEqualToString:kThreadText_thread]) {
         viewCtrName = @"ATThreadViewController";
@@ -90,9 +90,9 @@
     return _viewModel;
 }
 
-- (ATCommonTableView *)commonTableView {
+- (ATOldCommonTableView *)commonTableView {
     if (!_commonTableView) {
-        _commonTableView = [[ATCommonTableView alloc] init];
+        _commonTableView = [[ATOldCommonTableView alloc] init];
         _commonTableView.delegate = self;
     }
     return _commonTableView;

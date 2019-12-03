@@ -11,16 +11,16 @@
 #import <Masonry/Masonry.h>
 #import <UIAlertController+Blocks/UIAlertController+Blocks.h>
 
-#import "ATCommonTableView.h"
+#import "ATOldCommonTableView.h"
 #import "ATRuntimeViewModel.h"
-#import "ATCommonTableModel.h"
+#import "ATOldCommonTableModel.h"
 
 #import "ATPerson.h"
 #import "ATPerson+addProperty.h"
 
-@interface ATRuntimeViewController () <ATCommonTableViewDelegate, ATPersonDelegate>
+@interface ATRuntimeViewController () <ATOldCommonTableViewDelegate, ATPersonDelegate>
 
-@property (nonatomic, strong) ATCommonTableView *commonTableView;
+@property (nonatomic, strong) ATOldCommonTableView *commonTableView;
 @property (nonatomic, strong) ATRuntimeViewModel *viewModel;
 
 @property (nonatomic, strong) ATPerson *student;
@@ -234,10 +234,10 @@ void fromCityAnswer(id self,SEL _cmd,NSString *str){
     NSLog(@"我来自:%@",str);
 }
 
-#pragma mark - ATCommonTableViewDelegate
+#pragma mark - ATOldCommonTableViewDelegate
 
-- (void)commonTableView:(ATCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ATCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
+- (void)commonTableView:(ATOldCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ATOldCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
     if (cmnModel.actionName.length > 0) {
         SEL sel = NSSelectorFromString(cmnModel.actionName);
         if ([self respondsToSelector:sel]) {
@@ -260,9 +260,9 @@ void fromCityAnswer(id self,SEL _cmd,NSString *str){
 
 #pragma mark - getter && setter
 
-- (ATCommonTableView *)commonTableView {
+- (ATOldCommonTableView *)commonTableView {
     if (!_commonTableView) {
-        _commonTableView = [[ATCommonTableView alloc] init];
+        _commonTableView = [[ATOldCommonTableView alloc] init];
         _commonTableView.delegate = self;
     }
     return _commonTableView;

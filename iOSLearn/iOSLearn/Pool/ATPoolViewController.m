@@ -9,8 +9,8 @@
 #import "ATPoolViewController.h"
 #import <Masonry/Masonry.h>
 #import <YYKit/UIImage+YYAdd.h>
-#import <ATBase/UILabel+ATHelper.h>
-#import <ATBase/UIButton+ATHelper.h>
+#import "UILabel+ATHelper.h"
+#import "UIButton+ATHelper.h"
 
 static NSString *const kPoolKey_urlCount = @"poolKey_urlCount";
 
@@ -174,7 +174,7 @@ static NSString *const kPoolKey_urlCount = @"poolKey_urlCount";
 
 - (UILabel *)showLab {
     if (!_showLab) {
-        _showLab = [UILabel at_labelWithtextColor:[UIColor blueColor] font:[UIFont systemFontOfSize:17]];
+        _showLab = [UILabel at_labelWithTextColor:[UIColor blueColor] font:[UIFont systemFontOfSize:17]];
         _showLab.textAlignment = NSTextAlignmentCenter;
         _showLab.layer.cornerRadius = 5;
         _showLab.layer.borderWidth = 1.0;
