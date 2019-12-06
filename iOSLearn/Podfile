@@ -21,6 +21,10 @@ target 'iOSLearn' do
     pod 'MJRefresh'
 #    pod 'ATBase'
     pod 'YYKit'
+    pod 'BGFMDB'
+    pod 'UMCAnalytics'
+    pod 'GTSDK'
+    pod 'Aspects'
     # target 'MyAppTests' do
       # inherit! :search_paths 
       # pod 'OCMock', '~> 2.0.1' 

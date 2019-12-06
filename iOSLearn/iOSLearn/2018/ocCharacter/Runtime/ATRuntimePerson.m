@@ -1,15 +1,15 @@
 //
-//  ATPerson.m
+//  ATRuntimePerson.m
 //  iOSLearn
 //
 //  Created by SimonMiao on 2018/4/4.
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
-#import "ATPerson.h"
+#import "ATRuntimePerson.h"
 #import <objc/runtime.h>
 
-@interface ATPerson () <NSCoding>
+@interface ATRuntimePerson () <NSCoding>
 {
     NSString *_testName;
 }
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation ATPerson
+@implementation ATRuntimePerson
 
 //@synthesize testName = _testName;
 @dynamic testName;

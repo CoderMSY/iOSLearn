@@ -21,6 +21,8 @@
     
     ATQuestionModel *uiInfoQModel = (ATQuestionModel *)[ATQuestionModel decodeFromDic:dataDic[@"uiInfo"]];
     ATQuestionModel *ocCharacterQModel = (ATQuestionModel *)[ATQuestionModel decodeFromDic:dataDic[@"ocCharacter"]];
+    ATQuestionModel *runtimeQModel = (ATQuestionModel *)[ATQuestionModel decodeFromDic:dataDic[@"runtime"]];
+    ATQuestionModel *algorithmQModel = (ATQuestionModel *)[ATQuestionModel decodeFromDic:dataDic[@"algorithm"]];
     
     NSArray *rowArrs = @[
         @{
@@ -32,6 +34,16 @@
             kRow_title : ocCharacterQModel.title ? : @"",
             kRow_detailTitle : ocCharacterQModel.detail ? : @"",
             kRow_extraInfo : ocCharacterQModel
+        },
+        @{
+            kRow_title : runtimeQModel.title ? : @"",
+            kRow_detailTitle : runtimeQModel.detail ? : @"",
+            kRow_extraInfo : runtimeQModel
+        },
+        @{
+            kRow_title : algorithmQModel.title ? : @"",
+            kRow_detailTitle : algorithmQModel.detail ? : @"",
+            kRow_extraInfo : algorithmQModel
         }
     ];
     NSDictionary *sectionDic = @{

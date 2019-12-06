@@ -1,5 +1,5 @@
 //
-//  ATPerson.h
+//  ATRuntimePerson.h
 //  iOSLearn
 //
 //  Created by SimonMiao on 2018/4/4.
@@ -14,7 +14,7 @@
 
 @end
 
-@interface ATPerson : NSObject
+@interface ATRuntimePerson : NSObject
 
 #pragma mark -属性
 @property (nonatomic,assign) id<ATPersonDelegate> delegate;

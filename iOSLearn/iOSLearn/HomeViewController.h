@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ATBaseViewController.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : ATBaseViewController
 
 @end

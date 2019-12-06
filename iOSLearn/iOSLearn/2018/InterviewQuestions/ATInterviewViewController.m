@@ -15,6 +15,7 @@
 #import "ATQuestionModel.h"
 
 #import "ATViewRelatedController.h"
+#import "ATAlgorithmViewController.h"
 
 @interface ATInterviewViewController () <ATInterviewPresenterOutput, ATTableViewProtocol>
 
@@ -142,6 +143,10 @@
     if ([viewController isKindOfClass:[ATViewRelatedController class]]) {
         ATViewRelatedController *viewRelatedCtr = (ATViewRelatedController *)viewController;
         viewRelatedCtr.questionList = qModel.list;
+    }
+    else if ([viewController isKindOfClass:[ATAlgorithmViewController class]]) {
+        ATAlgorithmViewController *algorithmCtr = (ATAlgorithmViewController *)viewController;
+        algorithmCtr.questionList = qModel.list;
     }
     if (viewController) {
         [self.navigationController pushViewController:viewController animated:YES];

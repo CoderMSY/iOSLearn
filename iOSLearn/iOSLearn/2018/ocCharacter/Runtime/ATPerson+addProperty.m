@@ -9,7 +9,7 @@
 #import "ATPerson+addProperty.h"
 #import <objc/runtime.h>
 
-@implementation ATPerson (addProperty)
+@implementation ATRuntimePerson (addProperty)
 
 char eName;
 

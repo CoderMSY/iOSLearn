@@ -10,6 +10,8 @@
 //#import "HomeViewController.h"
 #import "ATTabBarControllerConfig.h"
 
+#import "ATStatistics.h"
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) ATTabBarControllerConfig *tabBarConfig;
@@ -21,6 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"BuriedPoint.plist" ofType:@""];
+    [ATStatistics configureDataWithPlistFile:@"BuriedPoint"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.tabBarConfig = [[ATTabBarControllerConfig alloc] init];

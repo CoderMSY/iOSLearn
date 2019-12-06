@@ -76,9 +76,52 @@
                 "detail": "",
                 "controller": "ATDeepShallowCopyViewController",
                 "list": []
+            }
+        ]
+    },
+    "runtime": {
+        "title": "runtime相关使用",
+        "detail": "",
+        "controller": "ATRuntimeViewController",
+        "list": []
+    },
+    "algorithm": {
+        "title": "算法相关",
+        "detail": "",
+        "controller": "ATAlgorithmViewController",
+        "list": [
+            {
+                "title": "字符串反转",
+                "detail": "",
+                "controller": "",
+                "list": []
             },
             {
-                "title": "MultiPolygon",
+                "title": "链表反转",
+                "detail": "",
+                "controller": "ATLinkedListViewController",
+                "list": []
+            },
+            {
+                "title": "有序数组合并",
+                "detail": "",
+                "controller": "",
+                "list": []
+            },
+            {
+                "title": "Hash算法",
+                "detail": "",
+                "controller": "",
+                "list": []
+            },
+            {
+                "title": "查找两个子视图的共同父视图",
+                "detail": "",
+                "controller": "",
+                "list": []
+            },
+            {
+                "title": "求无序数组当中的中位数",
                 "detail": "",
                 "controller": "",
                 "list": []

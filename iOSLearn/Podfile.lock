@@ -14,51 +14,76 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - BGFMDB (2.0.13):
+    - BGFMDB/BG (= 2.0.13)
+    - BGFMDB/FMDB (= 2.0.13)
+  - BGFMDB/BG (2.0.13):
+    - BGFMDB/FMDB
+  - BGFMDB/FMDB (2.0.13)
   - CocoaLumberjack (3.6.0):
     - CocoaLumberjack/Core (= 3.6.0)
   - CocoaLumberjack/Core (3.6.0)
   - CYLTabBarController (1.28.4):
     - CYLTabBarController/Core (= 1.28.4)
   - CYLTabBarController/Core (1.28.4)
+  - GTSDK (2.4.1.0)
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
   - MJRefresh (3.2.3)
   - "UIAlertController+Blocks (0.9.2)"
+  - UMCAnalytics (6.0.5):
+    - UMCCommon
+  - UMCCommon (2.1.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Aspects
+  - BGFMDB
   - CocoaLumberjack
   - CYLTabBarController
+  - GTSDK
   - Masonry
   - MJExtension
   - MJRefresh
   - "UIAlertController+Blocks"
+  - UMCAnalytics
   - YYKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Aspects
+    - BGFMDB
     - CocoaLumberjack
     - CYLTabBarController
+    - GTSDK
     - Masonry
     - MJExtension
     - MJRefresh
     - "UIAlertController+Blocks"
+    - UMCAnalytics
+    - UMCCommon
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
   CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
   CYLTabBarController: d7160abd77b3a94626cff123fdfaa4f3badde20d
+  GTSDK: 574d9067cd7e506dafc664801352a77e8214d1e0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  UMCAnalytics: 045be2cd1ec05aa95ad62405a850757f932e2d59
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 469ea846165d8f48ec34a26e3e210fe2c1904cec
+PODFILE CHECKSUM: c3d028e538411d92f75a315da952fdc6f82fb5f9
 
 COCOAPODS: 1.8.4

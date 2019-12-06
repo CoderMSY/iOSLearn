@@ -11,19 +11,21 @@
 #import <Masonry/Masonry.h>
 #import <UIAlertController+Blocks/UIAlertController+Blocks.h>
 
-#import "ATOldCommonTableView.h"
-#import "ATRuntimeViewModel.h"
-#import "ATOldCommonTableModel.h"
+#import "ATCommonTableView.h"
+#import "ATTableViewProtocol.h"
+#import "ATCommonTableData.h"
 
-#import "ATPerson.h"
+#import "ATRuntimeViewModel.h"
+
+#import "ATRuntimePerson.h"
 #import "ATPerson+addProperty.h"
 
-@interface ATRuntimeViewController () <ATOldCommonTableViewDelegate, ATPersonDelegate>
+@interface ATRuntimeViewController () <ATTableViewProtocol, ATPersonDelegate>
 
-@property (nonatomic, strong) ATOldCommonTableView *commonTableView;
+@property (nonatomic, strong) ATCommonTableView *listView;
 @property (nonatomic, strong) ATRuntimeViewModel *viewModel;
 
-@property (nonatomic, strong) ATPerson *student;
+@property (nonatomic, strong) ATRuntimePerson *student;
 
 @end
 
@@ -34,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view addSubview:self.commonTableView];
+    [self.view addSubview:self.listView];
     [self initConstraints];
     
     [self loadDataSource];
@@ -57,22 +59,22 @@
 #pragma mark - private methods
 
 - (void)initConstraints {
-    [self.commonTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.listView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
 }
 
 - (void)loadDataSource {
     NSArray *dataSource = [self.viewModel getDataSource];
-    self.commonTableView.dataSource = dataSource;
+    self.listView.dataSource = dataSource;
 }
 
 - (void)function1ItemClicked {
-    NSLog(@"=================================================================");
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
     unsigned int count;
 
     // 拷贝成员变量列表。返回的一个Ivar列表的指针
-    Ivar *ivars = class_copyIvarList([ATPerson class], &count);
+    Ivar *ivars = class_copyIvarList([ATRuntimePerson class], &count);
     
     for (int i=0 ; i<count; i++) {
         Ivar ivar = ivars[i];
@@ -88,11 +90,11 @@
 }
 
 - (void)function2ItemClicked {
-    NSLog(@"=================================================================");
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
     unsigned int count;
     
     //获得指向该类所有属性的指针
-    objc_property_t *properties = class_copyPropertyList([ATPerson class], &count);
+    objc_property_t *properties = class_copyPropertyList([ATRuntimePerson class], &count);
     
     for (int i=0 ; i<count; i++) {
         //获得该类的一个属性的指针
@@ -109,10 +111,10 @@
 }
 
 - (void)function3ItemClicked {
-    NSLog(@"=================================================================");
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
     unsigned int count;
     //获取指向该类的所有方法的数组指针
-    Method *methods = class_copyMethodList([ATPerson class], &count);
+    Method *methods = class_copyMethodList([ATRuntimePerson class], &count);
     
     for (int i = 0; i < count; i ++) {
         //获取该类的一个方法的指针
@@ -136,7 +138,7 @@
 
 //4. 获取类遵循的全部协议
 - (void)function4ItemClicked {
-    NSLog(@"=================================================================");
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
     unsigned int count;
     
     //获取指向该类遵循的所有协议的数组指针
@@ -159,7 +161,7 @@
  * 可以修改成员变量的值，比如讲person的名字从张三 改成李四。
  */
 - (void)function5ItemClicked {
-    NSLog(@"=================================================================");
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
     self.student.name = @"张三";
     
     unsigned int count = 0;
@@ -183,8 +185,9 @@
 
 //动态交换类两个方法
 - (void)function6ItemClicked {
-    Method m1 = class_getInstanceMethod([ATPerson class], @selector(doSomeThing));
-    Method m2 = class_getInstanceMethod([ATPerson class], @selector(doSomeOtherThing));
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
+    Method m1 = class_getInstanceMethod([ATRuntimePerson class], @selector(doSomeThing));
+    Method m2 = class_getInstanceMethod([ATRuntimePerson class], @selector(doSomeOtherThing));
     
     method_exchangeImplementations(m1, m2);
     
@@ -193,7 +196,7 @@
     NSLog(@"student do doSomeOtherThing:%@",[self.student doSomeOtherThing]);
     
     // 运行时修改的是类，不是单一对象 一次修改 在下次编译前一直有效。
-    ATPerson *student2 = [ATPerson new];
+    ATRuntimePerson *student2 = [ATRuntimePerson new];
     NSLog(@"student do something:%@",[student2 doSomeThing]);
     NSLog(@"student do doSomeOtherThing:%@",[student2 doSomeOtherThing]);
     
@@ -208,6 +211,7 @@
 /** 动态添加新方法
  */
 - (void)function7ItemClicked {
+    NSLog(@"=========== %s,%d ===========", __FUNCTION__,__LINE__);
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wundeclared-selector"
     class_addMethod([self.student class], @selector(fromCity:), (IMP)fromCityAnswer, "v@:@");
@@ -234,12 +238,19 @@ void fromCityAnswer(id self,SEL _cmd,NSString *str){
     NSLog(@"我来自:%@",str);
 }
 
-#pragma mark - ATOldCommonTableViewDelegate
+#pragma mark - ATTableViewProtocol
 
-- (void)commonTableView:(ATOldCommonTableView *)commonView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ATOldCommonTableModel *cmnModel = self.commonTableView.dataSource[indexPath.row];
-    if (cmnModel.actionName.length > 0) {
-        SEL sel = NSSelectorFromString(cmnModel.actionName);
+- (void)at_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ATCommonTableSection *sectionModel = self.listView.dataSource[indexPath.section];
+    ATCommonTableRow *rowModel = sectionModel.rows[indexPath.row];
+    
+    if (![rowModel.extraInfo isKindOfClass:[NSString class]]) {
+        return;
+    }
+    
+    NSString *actionName = (NSString *)rowModel.extraInfo;
+    if (actionName.length > 0) {
+        SEL sel = NSSelectorFromString(actionName);
         if ([self respondsToSelector:sel]) {
             AT_SuppressPerformSelectorLeakWarning([self performSelector:sel]);
         }
@@ -260,12 +271,11 @@ void fromCityAnswer(id self,SEL _cmd,NSString *str){
 
 #pragma mark - getter && setter
 
-- (ATOldCommonTableView *)commonTableView {
-    if (!_commonTableView) {
-        _commonTableView = [[ATOldCommonTableView alloc] init];
-        _commonTableView.delegate = self;
+- (ATCommonTableView *)listView {
+    if (!_listView) {
+        _listView = [[ATCommonTableView alloc] init];
     }
-    return _commonTableView;
+    return _listView;
 }
 
 - (ATRuntimeViewModel *)viewModel {
@@ -276,9 +286,9 @@ void fromCityAnswer(id self,SEL _cmd,NSString *str){
     return _viewModel;
 }
 
-- (ATPerson *)student {
+- (ATRuntimePerson *)student {
     if (!_student) {
-        _student = [[ATPerson alloc] init];
+        _student = [[ATRuntimePerson alloc] init];
         _student.delegate = self;
     }
     return _student;

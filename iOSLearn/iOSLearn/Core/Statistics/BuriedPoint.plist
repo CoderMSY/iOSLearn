@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PV</key>
+	<dict>
+		<key>HomeViewController</key>
+		<dict>
+			<key>PageName</key>
+			<string>Activity 0</string>
+		</dict>
+		<key>ATInterviewViewController</key>
+		<dict>
+			<key>PageName</key>
+			<string>Activity 1</string>
+		</dict>
+		<key>ATViewAndLayerController</key>
+		<dict>
+			<key>PageName</key>
+			<string>Activity 2</string>
+		</dict>
+	</dict>
+	<key>Event</key>
+	<dict>
+		<key>事件1</key>
+		<dict>
+			<key>EventID</key>
+			<string>1000</string>
+			<key>EventConfig</key>
+			<dict>
+				<key>JKVC1点击</key>
+				<dict>
+					<key>target</key>
+					<string>JKVC1</string>
+					<key>selectorStr</key>
+					<string>JKClicked</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

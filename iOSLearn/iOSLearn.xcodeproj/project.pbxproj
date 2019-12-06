@@ -21,6 +21,12 @@
 		7E0A9BD0207377C300524B2D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A9BCF207377C300524B2D /* HomeViewController.m */; };
 		7E0E18AE207381A300B6C1F9 /* ATDeepShallowCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E18AD207381A300B6C1F9 /* ATDeepShallowCopyViewController.m */; };
 		7E0E18B1207382EA00B6C1F9 /* ATBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E18B0207382EA00B6C1F9 /* ATBaseViewController.m */; };
+		7E1DA95123979075000C105B /* ATDaoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1DA95023979075000C105B /* ATDaoFactory.m */; };
+		7E1DA95623979445000C105B /* ATStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1DA95523979445000C105B /* ATStatistics.m */; };
+		7E1DA95823979A00000C105B /* BuriedPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E1DA95723979A00000C105B /* BuriedPoint.plist */; };
+		7E1DA95B2397B686000C105B /* ATBaseLogicDaoImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1DA9592397B686000C105B /* ATBaseLogicDaoImpl.m */; };
+		7E1DA95E2397B73F000C105B /* ATPageVisitLogicDaoImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1DA95D2397B73F000C105B /* ATPageVisitLogicDaoImpl.m */; };
+		7E1DA9622397B897000C105B /* ATPageVisitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1DA9612397B897000C105B /* ATPageVisitModel.m */; };
 		7E49EFB32078836700405ED0 /* ATOldCommonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E49EFB22078836700405ED0 /* ATOldCommonTableView.m */; };
 		7E5599E520995B0D00EC307A /* ATTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5599E420995B0D00EC307A /* ATTimerViewController.m */; };
 		7E5A58D02394BAA700B3FD4B /* ATContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A58CF2394BAA700B3FD4B /* ATContentViewController.m */; };
@@ -36,6 +42,11 @@
 		7E5A59072395135600B3FD4B /* ATBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A59062395135600B3FD4B /* ATBaseModel.m */; };
 		7E5A5908239514EB00B3FD4B /* ATInterviewQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A590123950CAE00B3FD4B /* ATInterviewQuestions.json */; };
 		7E7D4C59207EFA66003EBEC1 /* ATPoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7D4C58207EFA66003EBEC1 /* ATPoolViewController.m */; };
+		7E8E1EDD2398DE0100DF039B /* ATAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E1EDC2398DE0100DF039B /* ATAlgorithmViewController.m */; };
+		7E8E1EE02398E09500DF039B /* ATAlgorithmPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E1EDF2398E09500DF039B /* ATAlgorithmPresenter.m */; };
+		7E8E1EEB2399255200DF039B /* BBLinkedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E1EE72399255200DF039B /* BBLinkedMap.m */; };
+		7E8E1EEC2399255200DF039B /* BBSingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E1EEA2399255200DF039B /* BBSingleLinkedList.m */; };
+		7E8E1EEF2399259600DF039B /* ATLinkedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E1EEE2399259600DF039B /* ATLinkedListViewController.m */; };
 		7E97EC2620944A1000F81D57 /* ATStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E97EC2520944A1000F81D57 /* ATStorageViewController.m */; };
 		7E97EC2920944A8200F81D57 /* ATKeyedArchiverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E97EC2820944A8200F81D57 /* ATKeyedArchiverModel.m */; };
 		7EB506202225437F00F7D957 /* ATStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5061F2225437F00F7D957 /* ATStoreViewController.m */; };
@@ -43,6 +54,8 @@
 		7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF2207B4C780069AEA1 /* ATKVOViewController.m */; };
 		7EB64EF5207B4C780069AEA1 /* ATKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */; };
 		7EB64EF8207B4FF80069AEA1 /* ATKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */; };
+		7EC603012396635400E27387 /* ATBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC603002396635400E27387 /* ATBaseTableViewCell.m */; };
+		7EC603042396638A00E27387 /* ATRuntimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC603032396638A00E27387 /* ATRuntimeCell.m */; };
 		7ED58A3820805C6500ABEA3D /* ATMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED58A3720805C6500ABEA3D /* ATMultiThreadViewController.m */; };
 		7EDD7E7A238FCA6F001466E2 /* ATTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD7E79238FCA6F001466E2 /* ATTabBarControllerConfig.m */; };
 		7EDD7E7F238FCD21001466E2 /* ATInterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD7E7E238FCD21001466E2 /* ATInterviewViewController.m */; };
@@ -68,7 +81,7 @@
 		7EE8281E20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8281D20A59D2500B4E7D3 /* ATThreadRunLoopViewController.m */; };
 		7EE8282120A59D7E00B4E7D3 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8282020A59D7E00B4E7D3 /* Foo.m */; };
 		7EF63E10207466EB00F6F841 /* ATRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */; };
-		7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E12207466FD00F6F841 /* ATPerson.m */; };
+		7EF63E13207466FD00F6F841 /* ATRuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E12207466FD00F6F841 /* ATRuntimePerson.m */; };
 		7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF63E152074708700F6F841 /* ATPerson+addProperty.m */; };
 		7EFF53A42092CA4800938F24 /* ATSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF53A32092CA4800938F24 /* ATSortViewController.m */; };
 		7EFF53A72092CAA000938F24 /* ATSortViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF53A62092CAA000938F24 /* ATSortViewModel.m */; };
@@ -126,6 +139,18 @@
 		7E0E18AD207381A300B6C1F9 /* ATDeepShallowCopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDeepShallowCopyViewController.m; sourceTree = "<group>"; };
 		7E0E18AF207382EA00B6C1F9 /* ATBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseViewController.h; sourceTree = "<group>"; };
 		7E0E18B0207382EA00B6C1F9 /* ATBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseViewController.m; sourceTree = "<group>"; };
+		7E1DA94F23979075000C105B /* ATDaoFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDaoFactory.h; sourceTree = "<group>"; };
+		7E1DA95023979075000C105B /* ATDaoFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATDaoFactory.m; sourceTree = "<group>"; };
+		7E1DA95423979445000C105B /* ATStatistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStatistics.h; sourceTree = "<group>"; };
+		7E1DA95523979445000C105B /* ATStatistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStatistics.m; sourceTree = "<group>"; };
+		7E1DA95723979A00000C105B /* BuriedPoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BuriedPoint.plist; sourceTree = "<group>"; };
+		7E1DA9592397B686000C105B /* ATBaseLogicDaoImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBaseLogicDaoImpl.m; sourceTree = "<group>"; };
+		7E1DA95A2397B686000C105B /* ATBaseLogicDaoImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBaseLogicDaoImpl.h; sourceTree = "<group>"; };
+		7E1DA95C2397B73F000C105B /* ATPageVisitLogicDaoImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPageVisitLogicDaoImpl.h; sourceTree = "<group>"; };
+		7E1DA95D2397B73F000C105B /* ATPageVisitLogicDaoImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPageVisitLogicDaoImpl.m; sourceTree = "<group>"; };
+		7E1DA95F2397B770000C105B /* ATPageVisitLogicDaoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPageVisitLogicDaoProtocol.h; sourceTree = "<group>"; };
+		7E1DA9602397B897000C105B /* ATPageVisitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPageVisitModel.h; sourceTree = "<group>"; };
+		7E1DA9612397B897000C105B /* ATPageVisitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPageVisitModel.m; sourceTree = "<group>"; };
 		7E49EFB12078836700405ED0 /* ATOldCommonTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATOldCommonTableView.h; sourceTree = "<group>"; };
 		7E49EFB22078836700405ED0 /* ATOldCommonTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATOldCommonTableView.m; sourceTree = "<group>"; };
 		7E5599E320995B0D00EC307A /* ATTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTimerViewController.h; sourceTree = "<group>"; };
@@ -160,6 +185,17 @@
 		7E5A59062395135600B3FD4B /* ATBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseModel.m; sourceTree = "<group>"; };
 		7E7D4C57207EFA66003EBEC1 /* ATPoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPoolViewController.h; sourceTree = "<group>"; };
 		7E7D4C58207EFA66003EBEC1 /* ATPoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPoolViewController.m; sourceTree = "<group>"; };
+		7E8E1EDB2398DE0100DF039B /* ATAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAlgorithmViewController.h; sourceTree = "<group>"; };
+		7E8E1EDC2398DE0100DF039B /* ATAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAlgorithmViewController.m; sourceTree = "<group>"; };
+		7E8E1EDE2398E09500DF039B /* ATAlgorithmPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAlgorithmPresenter.h; sourceTree = "<group>"; };
+		7E8E1EDF2398E09500DF039B /* ATAlgorithmPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAlgorithmPresenter.m; sourceTree = "<group>"; };
+		7E8E1EE12398E0AD00DF039B /* ATAlgorithmPresenterIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAlgorithmPresenterIO.h; sourceTree = "<group>"; };
+		7E8E1EE62399255200DF039B /* BBLinkedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLinkedMap.h; sourceTree = "<group>"; };
+		7E8E1EE72399255200DF039B /* BBLinkedMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLinkedMap.m; sourceTree = "<group>"; };
+		7E8E1EE92399255200DF039B /* BBSingleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSingleLinkedList.h; sourceTree = "<group>"; };
+		7E8E1EEA2399255200DF039B /* BBSingleLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSingleLinkedList.m; sourceTree = "<group>"; };
+		7E8E1EED2399259600DF039B /* ATLinkedListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATLinkedListViewController.h; sourceTree = "<group>"; };
+		7E8E1EEE2399259600DF039B /* ATLinkedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATLinkedListViewController.m; sourceTree = "<group>"; };
 		7E97EC2420944A1000F81D57 /* ATStorageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATStorageViewController.h; sourceTree = "<group>"; };
 		7E97EC2520944A1000F81D57 /* ATStorageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATStorageViewController.m; sourceTree = "<group>"; };
 		7E97EC2720944A8200F81D57 /* ATKeyedArchiverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKeyedArchiverModel.h; sourceTree = "<group>"; };
@@ -173,6 +209,10 @@
 		7EB64EF3207B4C780069AEA1 /* ATKVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATKVOViewController.xib; sourceTree = "<group>"; };
 		7EB64EF6207B4FF80069AEA1 /* ATKVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVOModel.h; sourceTree = "<group>"; };
 		7EB64EF7207B4FF80069AEA1 /* ATKVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVOModel.m; sourceTree = "<group>"; };
+		7EC602FF2396635400E27387 /* ATBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseTableViewCell.h; sourceTree = "<group>"; };
+		7EC603002396635400E27387 /* ATBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseTableViewCell.m; sourceTree = "<group>"; };
+		7EC603022396638A00E27387 /* ATRuntimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeCell.h; sourceTree = "<group>"; };
+		7EC603032396638A00E27387 /* ATRuntimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeCell.m; sourceTree = "<group>"; };
 		7ED58A3620805C6500ABEA3D /* ATMultiThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMultiThreadViewController.h; sourceTree = "<group>"; };
 		7ED58A3720805C6500ABEA3D /* ATMultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMultiThreadViewController.m; sourceTree = "<group>"; };
 		7EDD7E78238FCA6E001466E2 /* ATTabBarControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTabBarControllerConfig.h; sourceTree = "<group>"; };
@@ -227,8 +267,8 @@
 		7EE8282020A59D7E00B4E7D3 /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		7EF63E0E207466EB00F6F841 /* ATRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeViewController.h; sourceTree = "<group>"; };
 		7EF63E0F207466EB00F6F841 /* ATRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeViewController.m; sourceTree = "<group>"; };
-		7EF63E11207466FD00F6F841 /* ATPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPerson.h; sourceTree = "<group>"; };
-		7EF63E12207466FD00F6F841 /* ATPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPerson.m; sourceTree = "<group>"; };
+		7EF63E11207466FD00F6F841 /* ATRuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimePerson.h; sourceTree = "<group>"; };
+		7EF63E12207466FD00F6F841 /* ATRuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimePerson.m; sourceTree = "<group>"; };
 		7EF63E142074708700F6F841 /* ATPerson+addProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ATPerson+addProperty.h"; sourceTree = "<group>"; };
 		7EF63E152074708700F6F841 /* ATPerson+addProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ATPerson+addProperty.m"; sourceTree = "<group>"; };
 		7EFF53A22092CA4800938F24 /* ATSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSortViewController.h; sourceTree = "<group>"; };
@@ -317,7 +357,9 @@
 				7EE1F0102079BFC800783702 /* ATBaseViewModel.h */,
 				7EE1F0112079BFC800783702 /* ATBaseViewModel.m */,
 				7E49EFB02078834B00405ED0 /* Common */,
+				7E1DA952239793D6000C105B /* Core */,
 				7EDD7E80238FD095001466E2 /* Legacy */,
+				7E1DA94C23979039000C105B /* Factory */,
 				7EDD7E7B238FCC98001466E2 /* 2018 */,
 				7EB5061D2225435F00F7D957 /* Store */,
 				7E5599E220995AFA00EC307A /* Timer */,
@@ -327,7 +369,6 @@
 				7ED58A3520805C5200ABEA3D /* MultiThread */,
 				7E7D4C5A207F2E9D003EBEC1 /* Video */,
 				7E7D4C56207EFA34003EBEC1 /* Pool */,
-				7EF63E0D2074652700F6F841 /* Runtime */,
 				7E0A9B9E2073673100524B2D /* Main.storyboard */,
 				7E0A9BA12073673300524B2D /* Assets.xcassets */,
 				7E0A9BA32073673300524B2D /* LaunchScreen.storyboard */,
@@ -366,6 +407,64 @@
 				7E0A9BCC207367C700524B2D /* Student.m */,
 			);
 			path = Copy;
+			sourceTree = "<group>";
+		};
+		7E1DA94C23979039000C105B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7E1DA94D23979043000C105B /* DAO */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7E1DA94D23979043000C105B /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				7E1DA94E23979055000C105B /* DaoImpl */,
+				7E1DA94F23979075000C105B /* ATDaoFactory.h */,
+				7E1DA95023979075000C105B /* ATDaoFactory.m */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		7E1DA94E23979055000C105B /* DaoImpl */ = {
+			isa = PBXGroup;
+			children = (
+				7E1DA95A2397B686000C105B /* ATBaseLogicDaoImpl.h */,
+				7E1DA9592397B686000C105B /* ATBaseLogicDaoImpl.m */,
+				7E1DA9632397BAA7000C105B /* PageVisit */,
+			);
+			path = DaoImpl;
+			sourceTree = "<group>";
+		};
+		7E1DA952239793D6000C105B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7E1DA9532397941F000C105B /* Statistics */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7E1DA9532397941F000C105B /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				7E1DA95423979445000C105B /* ATStatistics.h */,
+				7E1DA95523979445000C105B /* ATStatistics.m */,
+				7E1DA95723979A00000C105B /* BuriedPoint.plist */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		7E1DA9632397BAA7000C105B /* PageVisit */ = {
+			isa = PBXGroup;
+			children = (
+				7E1DA95C2397B73F000C105B /* ATPageVisitLogicDaoImpl.h */,
+				7E1DA95D2397B73F000C105B /* ATPageVisitLogicDaoImpl.m */,
+				7E1DA95F2397B770000C105B /* ATPageVisitLogicDaoProtocol.h */,
+				7E1DA9602397B897000C105B /* ATPageVisitModel.h */,
+				7E1DA9612397B897000C105B /* ATPageVisitModel.m */,
+			);
+			path = PageVisit;
 			sourceTree = "<group>";
 		};
 		7E49EFB02078834B00405ED0 /* Common */ = {
@@ -423,6 +522,8 @@
 				7E5A58F12394F3BD00B3FD4B /* ATTableViewAdapter.m */,
 				7E5A58EC2394F3BD00B3FD4B /* ATTableViewProtocol.h */,
 				7E5A58F02394F3BD00B3FD4B /* ATTableViewCellProtocol.h */,
+				7EC602FF2396635400E27387 /* ATBaseTableViewCell.h */,
+				7EC603002396635400E27387 /* ATBaseTableViewCell.m */,
 			);
 			name = TableView;
 			path = "../../../../../../../../Work/MeetingSystem/MeetingSystem/MeetingSystem/Common/New Group1/Global/TableView";
@@ -452,6 +553,7 @@
 				7EB64EED207B3CEE0069AEA1 /* KVO */,
 				7E04291F20919787009BCABB /* KVC */,
 				7E0A9BCA207367B400524B2D /* Copy */,
+				7EF63E0D2074652700F6F841 /* Runtime */,
 			);
 			path = ocCharacter;
 			sourceTree = "<group>";
@@ -470,6 +572,40 @@
 			children = (
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		7E8E1EDA2398DDCD00DF039B /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7E8E1EDB2398DE0100DF039B /* ATAlgorithmViewController.h */,
+				7E8E1EDC2398DE0100DF039B /* ATAlgorithmViewController.m */,
+				7E8E1EDE2398E09500DF039B /* ATAlgorithmPresenter.h */,
+				7E8E1EDF2398E09500DF039B /* ATAlgorithmPresenter.m */,
+				7E8E1EE12398E0AD00DF039B /* ATAlgorithmPresenterIO.h */,
+				7E8E1EED2399259600DF039B /* ATLinkedListViewController.h */,
+				7E8E1EEE2399259600DF039B /* ATLinkedListViewController.m */,
+				7E8E1EE52399255200DF039B /* LinkedMap */,
+				7E8E1EE82399255200DF039B /* SingleLinkedList */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		7E8E1EE52399255200DF039B /* LinkedMap */ = {
+			isa = PBXGroup;
+			children = (
+				7E8E1EE62399255200DF039B /* BBLinkedMap.h */,
+				7E8E1EE72399255200DF039B /* BBLinkedMap.m */,
+			);
+			path = LinkedMap;
+			sourceTree = "<group>";
+		};
+		7E8E1EE82399255200DF039B /* SingleLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				7E8E1EE92399255200DF039B /* BBSingleLinkedList.h */,
+				7E8E1EEA2399255200DF039B /* BBSingleLinkedList.m */,
+			);
+			path = SingleLinkedList;
 			sourceTree = "<group>";
 		};
 		7E97EC22209449AD00F81D57 /* storage */ = {
@@ -536,6 +672,7 @@
 		7EDD7E7B238FCC98001466E2 /* 2018 */ = {
 			isa = PBXGroup;
 			children = (
+				7E8E1EDA2398DDCD00DF039B /* algorithm */,
 				7E5A58FF239507A900B3FD4B /* ocCharacter */,
 				7E5A58FE2395077C00B3FD4B /* uiInfo */,
 				7EDD7E91238FED0A001466E2 /* ViewRelated */,
@@ -713,8 +850,10 @@
 				7EE1F0162079C11B00783702 /* ATRuntimeDefine.h */,
 				7EE1F0132079C01600783702 /* ATRuntimeViewModel.h */,
 				7EE1F0142079C01600783702 /* ATRuntimeViewModel.m */,
-				7EF63E11207466FD00F6F841 /* ATPerson.h */,
-				7EF63E12207466FD00F6F841 /* ATPerson.m */,
+				7EC603022396638A00E27387 /* ATRuntimeCell.h */,
+				7EC603032396638A00E27387 /* ATRuntimeCell.m */,
+				7EF63E11207466FD00F6F841 /* ATRuntimePerson.h */,
+				7EF63E12207466FD00F6F841 /* ATRuntimePerson.m */,
 				7EF63E142074708700F6F841 /* ATPerson+addProperty.h */,
 				7EF63E152074708700F6F841 /* ATPerson+addProperty.m */,
 				7EE1F00D2079BDEE00783702 /* ATDetailCodeViewController.h */,
@@ -880,6 +1019,7 @@
 			files = (
 				7E0A9BA52073673300524B2D /* LaunchScreen.storyboard in Resources */,
 				7EB64EF5207B4C780069AEA1 /* ATKVOViewController.xib in Resources */,
+				7E1DA95823979A00000C105B /* BuriedPoint.plist in Resources */,
 				7E5A5908239514EB00B3FD4B /* ATInterviewQuestions.json in Resources */,
 				7E0A9BA22073673300524B2D /* Assets.xcassets in Resources */,
 				7EE1F0192079FE0500783702 /* runtimeDemo.md in Resources */,
@@ -948,11 +1088,14 @@
 			files = (
 				7EF63E162074708700F6F841 /* ATPerson+addProperty.m in Sources */,
 				7E5A58FC2394FF2D00B3FD4B /* ATViewRelatedPresenter.m in Sources */,
+				7E1DA95123979075000C105B /* ATDaoFactory.m in Sources */,
 				7EB506202225437F00F7D957 /* ATStoreViewController.m in Sources */,
 				7E5599E520995B0D00EC307A /* ATTimerViewController.m in Sources */,
 				7EE8281A20A584FB00B4E7D3 /* ATThreadMemoryViewController.m in Sources */,
 				7EDDE6F820962B31001A14E8 /* ATMultiThreadViewModel.m in Sources */,
 				7EE8281120A583D400B4E7D3 /* ATThreadViewModel.m in Sources */,
+				7EC603012396635400E27387 /* ATBaseTableViewCell.m in Sources */,
+				7E8E1EE02398E09500DF039B /* ATAlgorithmPresenter.m in Sources */,
 				7E97EC2920944A8200F81D57 /* ATKeyedArchiverModel.m in Sources */,
 				7E7D4C59207EFA66003EBEC1 /* ATPoolViewController.m in Sources */,
 				7E97EC2620944A1000F81D57 /* ATStorageViewController.m in Sources */,
@@ -963,6 +1106,8 @@
 				7E0E18B1207382EA00B6C1F9 /* ATBaseViewController.m in Sources */,
 				7EE1F01C207A0B2E00783702 /* ATOldCommonTableModel.m in Sources */,
 				7EE1F0152079C01600783702 /* ATRuntimeViewModel.m in Sources */,
+				7E1DA95B2397B686000C105B /* ATBaseLogicDaoImpl.m in Sources */,
+				7E1DA95623979445000C105B /* ATStatistics.m in Sources */,
 				7EE1F0122079BFC800783702 /* ATBaseViewModel.m in Sources */,
 				7E5A58D02394BAA700B3FD4B /* ATContentViewController.m in Sources */,
 				7E5A58F22394F3BD00B3FD4B /* ATCommonTableView.m in Sources */,
@@ -971,6 +1116,7 @@
 				7EB64EF4207B4C780069AEA1 /* ATKVOViewController.m in Sources */,
 				7ED58A3820805C6500ABEA3D /* ATMultiThreadViewController.m in Sources */,
 				7E0A9B9D2073673100524B2D /* ViewController.m in Sources */,
+				7E8E1EEC2399255200DF039B /* BBSingleLinkedList.m in Sources */,
 				7EE8281620A584E100B4E7D3 /* ATThreadSaleTicketViewController.m in Sources */,
 				7E0A9BA82073673400524B2D /* main.m in Sources */,
 				7E5A58F42394F3BD00B3FD4B /* ATTableViewAdapter.m in Sources */,
@@ -979,14 +1125,16 @@
 				7EDDE6F220962A11001A14E8 /* ATOperationViewController.m in Sources */,
 				7EB506242225447A00F7D957 /* ATStoreArchiverViewController.m in Sources */,
 				7EE8282120A59D7E00B4E7D3 /* Foo.m in Sources */,
+				7E1DA9622397B897000C105B /* ATPageVisitModel.m in Sources */,
 				7EDD7E87238FD0D5001466E2 /* UILabel+ATHelper.m in Sources */,
 				7EFF53AC2092F1FF00938F24 /* ATBlockViewController.m in Sources */,
 				7EDD7E7A238FCA6F001466E2 /* ATTabBarControllerConfig.m in Sources */,
 				7EDDE6FC20962E52001A14E8 /* ATGCDViewController.m in Sources */,
 				7E5A58D42394E6D400B3FD4B /* ATBaseNavigationController.m in Sources */,
-				7EF63E13207466FD00F6F841 /* ATPerson.m in Sources */,
+				7EF63E13207466FD00F6F841 /* ATRuntimePerson.m in Sources */,
 				7EDD7E90238FD0F6001466E2 /* UIControl+ATFixMultiClick.m in Sources */,
 				7EFF53A42092CA4800938F24 /* ATSortViewController.m in Sources */,
+				7E8E1EEB2399255200DF039B /* BBLinkedMap.m in Sources */,
 				7EB64EF8207B4FF80069AEA1 /* ATKVOModel.m in Sources */,
 				7EDD7E8C238FD0DB001466E2 /* UIButton+ATHelper.m in Sources */,
 				7E04292520919ACC009BCABB /* ATStudentKVCModel.m in Sources */,
@@ -996,13 +1144,17 @@
 				7EF63E10207466EB00F6F841 /* ATRuntimeViewController.m in Sources */,
 				7E5A58D72394F18B00B3FD4B /* ATBasePresenter.m in Sources */,
 				7EDD7E88238FD0D5001466E2 /* UILabel+ATChangeLineSpaceAndWordSpace.m in Sources */,
+				7E1DA95E2397B73F000C105B /* ATPageVisitLogicDaoImpl.m in Sources */,
+				7EC603042396638A00E27387 /* ATRuntimeCell.m in Sources */,
 				7E5A58F32394F3BD00B3FD4B /* ATCommonTableData.m in Sources */,
 				7E0A9B9A2073673100524B2D /* AppDelegate.m in Sources */,
 				7EE1F00F2079BDEE00783702 /* ATDetailCodeViewController.m in Sources */,
 				7E5A58DA2394F1A500B3FD4B /* ATInterviewPresenter.m in Sources */,
 				7EFF53A72092CAA000938F24 /* ATSortViewModel.m in Sources */,
 				7E0A9BD0207377C300524B2D /* HomeViewController.m in Sources */,
+				7E8E1EDD2398DE0100DF039B /* ATAlgorithmViewController.m in Sources */,
 				7E0A9BCD207367C700524B2D /* Student.m in Sources */,
+				7E8E1EEF2399259600DF039B /* ATLinkedListViewController.m in Sources */,
 				7E5A59042395133600B3FD4B /* ATQuestionModel.m in Sources */,
 				7EDDE6F520962A4F001A14E8 /* ATOperationModel.m in Sources */,
 			);

@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Avatar. All rights reserved.
 //
 
-#import "ATPerson.h"
+#import "ATRuntimePerson.h"
 
-@interface ATPerson (addProperty)
+@interface ATRuntimePerson (addProperty)
 
 // 英文名
 @property (nonatomic, copy) NSString *englishName;

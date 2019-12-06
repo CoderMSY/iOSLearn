@@ -129,12 +129,12 @@ static NSString *const key_TabBarItemBadgeValue = @"tabBarItemBadgeValue";
                     key_TabBarItemBadgeValue : @(0)
             },
             @(ATTabBabConfigType_message) : @{
-                    key_TabBarVC : @"ATSessionListViewController",
+                    key_TabBarVC : @"ATBaseViewController",
                     key_TabBarVCTitle : kTabBarVCTitle_message,
                     key_TabBarItemBadgeValue : @(0)
             },
             @(ATTabBabConfigType_my) : @{
-                    key_TabBarVC : @"ATMyViewController",
+                    key_TabBarVC : @"ATBaseViewController",
                     key_TabBarVCTitle : kTabBarVCTitle_my,
                     key_TabBarItemBadgeValue : @(0)
             }

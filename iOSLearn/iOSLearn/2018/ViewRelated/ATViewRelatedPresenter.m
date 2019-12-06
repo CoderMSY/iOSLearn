@@ -19,6 +19,7 @@
     for (ATQuestionModel *qModel in infoArr) {
         NSMutableDictionary *rowDic = [NSMutableDictionary dictionary];
         rowDic[kRow_title] = qModel.title;
+//        rowDic[kRow_detailTitle] = qModel.detail;
         rowDic[kRow_extraInfo] = qModel;
         
         [rowArrs addObject:rowDic];
